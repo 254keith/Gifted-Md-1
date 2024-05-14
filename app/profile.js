@@ -1,9 +1,9 @@
 const JavaScriptObfuscator = require('javascript-obfuscator')
-const {france} = require("../framework/france");
+const {gifted} = require("../gifted/gifted");
 const conf = require("../set")
 const {jidDecode}=require("@whiskeysockets/baileys")
 
-france( {
+gifted( {
   nomCom : "enc",
  categorie : "General", 
    },
@@ -37,7 +37,7 @@ await repondre(obfuscationResult.getObfuscatedCode());
 
 
 
-france( {
+gifted( {
   nomCom : "whois",
  categorie : "User", 
    },
@@ -86,7 +86,7 @@ france( {
       }); 
 
 
-        france( {
+        gifted( {
   nomCom : "getpp",
  categorie : "User", 
    },
