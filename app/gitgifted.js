@@ -22,7 +22,7 @@ const img = 'https://telegra.ph/file/a202f454c9532c3f5b7f8.jpg';
 
 
 const gitdata = `
-*A Total of ${repoInfo.forks} People are have Deployed and are Currently using Gifted-Md.*
+*A Total of ${repoInfo.forks} People have Deployed and are Currently using Gifted-Md.*
 
 *${repoInfo.stars} People have starred it Showing a sign of Loving it.*
 
