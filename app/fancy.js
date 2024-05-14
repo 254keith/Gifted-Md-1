@@ -1,24 +1,6 @@
-const { gifted } = require("../gifted/gifted");
-const fancy = require("../app/style");
 
-gifted({ nomCom: "fancy", categorie: "Fun", reaction: "☑️" }, async (dest, zk, commandeOptions) => {
-    const { arg, repondre, prefixe } = commandeOptions;
-    const id = arg[0]?.match(/\d+/)?.join('');
-    const text = arg.slice(1).join(" ");
 
-    try {
-        if (id === undefined || text === undefined) {
-            return await repondre(`\nExample : ${prefixe}fancy 10 Gifted\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('Gifted', fancy));
-        }
 
-        const selectedStyle = fancy[parseInt(id) - 1];
-        if (selectedStyle) {
-            return await repondre(fancy.apply(selectedStyle, text));
-        } else {
-            return await repondre('_Style Not Found :(_');
-        }
-    } catch (error) {
-        console.error(error);
-        return await repondre('_Gifted Tech :(_');
-    }
-});
+const _0x1b1784=_0x9ace;function _0x9ace(_0x405b65,_0x334187){const _0x33915d=_0x3391();return _0x9ace=function(_0x9aceaa,_0x28b5b4){_0x9aceaa=_0x9aceaa-0xc4;let _0x8188ce=_0x33915d[_0x9aceaa];return _0x8188ce;},_0x9ace(_0x405b65,_0x334187);}function _0x3391(){const _0x411a55=['join','66uByVWg','6NOmBCX','10ctDmAg','Gifted','563931jxMXlM','1956813FjwDpw','fancy','repeat','fancy\x2010\x20Gifted\x0a','match','859090YJOxsu','800816MkWHRH','Fun','48XRwDoW','error','_Style\x20Not\x20Found\x20:(_','fromCharCode','1018255aRGpXY','slice','96728ieHLMe','list','15355716xdYiRG','../app/style','1GSZZjB'];_0x3391=function(){return _0x411a55;};return _0x3391();}(function(_0x35a7ea,_0x2578cc){const _0x308e37=_0x9ace,_0x1042ae=_0x35a7ea();while(!![]){try{const _0x11a4ec=parseInt(_0x308e37(0xd5))/0x1*(parseInt(_0x308e37(0xc9))/0x2)+-parseInt(_0x308e37(0xdc))/0x3+parseInt(_0x308e37(0xd1))/0x4*(parseInt(_0x308e37(0xd9))/0x5)+-parseInt(_0x308e37(0xd8))/0x6*(-parseInt(_0x308e37(0xcf))/0x7)+parseInt(_0x308e37(0xcb))/0x8*(-parseInt(_0x308e37(0xdb))/0x9)+parseInt(_0x308e37(0xc8))/0xa*(-parseInt(_0x308e37(0xd7))/0xb)+parseInt(_0x308e37(0xd3))/0xc;if(_0x11a4ec===_0x2578cc)break;else _0x1042ae['push'](_0x1042ae['shift']());}catch(_0x1fd228){_0x1042ae['push'](_0x1042ae['shift']());}}}(_0x3391,0x509d9));const {gifted}=require('../gifted/gifted'),fancy=require(_0x1b1784(0xd4));gifted({'nomCom':_0x1b1784(0xc4),'categorie':_0x1b1784(0xca),'reaction':'☑️'},async(_0x2f9384,_0x99780c,_0x3fe537)=>{const _0x28940a=_0x1b1784,{arg:_0x9531d5,repondre:_0x3e92d7,prefixe:_0xda0401}=_0x3fe537,_0x2fdacc=_0x9531d5[0x0]?.[_0x28940a(0xc7)](/\d+/)?.[_0x28940a(0xd6)](''),_0x4f729d=_0x9531d5[_0x28940a(0xd0)](0x1)[_0x28940a(0xd6)]('\x20');try{if(_0x2fdacc===undefined||_0x4f729d===undefined)return await _0x3e92d7('\x0aExample\x20:\x20'+_0xda0401+_0x28940a(0xc6)+String[_0x28940a(0xce)](0x200e)[_0x28940a(0xc5)](0xfa1)+fancy[_0x28940a(0xd2)](_0x28940a(0xda),fancy));const _0x51e90f=fancy[parseInt(_0x2fdacc)-0x1];return _0x51e90f?await _0x3e92d7(fancy['apply'](_0x51e90f,_0x4f729d)):await _0x3e92d7(_0x28940a(0xcd));}catch(_0x52052c){return console[_0x28940a(0xcc)](_0x52052c),await _0x3e92d7('_Gifted\x20Tech\x20:(_');}});
+
+
