@@ -108,7 +108,7 @@ setTimeout(() => {
         };
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
-        setInterval(() => { store.writeToFile("store.json"); }, 3000);
+        setInterval(() => { store.writeToFile("src/store.json"); }, 3000);
 
 
 /* zk.ws.on('CB:call', async json => {
