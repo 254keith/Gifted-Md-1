@@ -1,5 +1,0 @@
-build:
-  docker:
-      worker: data/Dockerfile
-run:
-   worker:   npm run giftedmd
