@@ -1,14 +1,14 @@
-const { france } = require("../framework/france");
-const fancy = require("../commandes/style");
+const { gifted } = require("../gifted/gifted");
+const fancy = require("../app/style");
 
-france({ nomCom: "fancy", categorie: "Fun", reaction: "☑️" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "fancy", categorie: "Fun", reaction: "☑️" }, async (dest, zk, commandeOptions) => {
     const { arg, repondre, prefixe } = commandeOptions;
     const id = arg[0]?.match(/\d+/)?.join('');
     const text = arg.slice(1).join(" ");
 
     try {
         if (id === undefined || text === undefined) {
-            return await repondre(`\nExample : ${prefixe}fancy 10 Flash-Md\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('FLASH-MD', fancy));
+            return await repondre(`\nExample : ${prefixe}fancy 10 Gifted\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('Gifted', fancy));
         }
 
         const selectedStyle = fancy[parseInt(id) - 1];
@@ -19,6 +19,6 @@ france({ nomCom: "fancy", categorie: "Fun", reaction: "☑️" }, async (dest, z
         }
     } catch (error) {
         console.error(error);
-        return await repondre('_France King :(_');
+        return await repondre('_Gifted Tech :(_');
     }
 });
