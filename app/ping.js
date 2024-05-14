@@ -16,8 +16,8 @@ gifted({ nomCom: 'ping',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
     let timeStart = Date.now();
-    return repondre('*Gifted-Md Speed:*\n ```' + 90 + '``` *ms*') 
+    return repondre('*Gifted-Md-Speed:*\n ```' + 90 + '``` *ms*') 
     let timeEnd = Date.now();
-    await zk.sendMessage(dest, {texte:'*Gifted-Md Speed:*' + (timeStart - timeEnd) + '``` *ms*')
+    await zk.sendMessage(dest, {texte:'*Gifted-Md-Speed:*' + (timeStart - timeEnd) + '``` *ms*')
   }
 )
