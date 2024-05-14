@@ -1,8 +1,8 @@
-const { france } = require('../framework/france');
+const { gifted } = require('../gifted/gifted');
 const s = require('../set')
 
 
-france(
+gifted(
     {
         nomCom : "setvar",
         categorie : "heroku"
@@ -11,7 +11,7 @@ france(
        const {ms,repondre,superUser , arg} = commandeOptions ;
        
        if(!superUser){repondre('only Mods can use this commande');return};
-       if(!arg[0] || !(arg.join('').split('='))) {repondre('Bad format ; Exemple of using :\nSetvar OWNER_NAME=France King');return};
+       if(!arg[0] || !(arg.join('').split('='))) {repondre('Bad format ; Exemple of using :\nSetvar OWNER_NAME=Gifted Tech');return};
      
     const text = arg.join(" ")
      const Heroku = require("heroku-client");
@@ -30,7 +30,7 @@ france(
     }
 );
 
-france(
+gifted(
     {
         nomCom : "allvar",
         categorie : "heroku"
@@ -48,7 +48,7 @@ france(
 			let baseURI = "/apps/" + s.HEROKU_APP_NAME;
 
             let h = await heroku.get(baseURI+'/config-vars')
-let str = '*All my HEROKU Vars*\n\n'
+let str = '*All Gifted-Md Heroku Vars:*\n\n'
 for (vr in h) {
 str+= '⚡ *'+vr+'* '+'= '+h[vr]+'\n'
 }
