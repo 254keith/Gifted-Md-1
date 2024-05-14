@@ -1,6 +1,6 @@
 var tabCmds = [];
 let cm = [];
-function france(obj, fonctions) {
+function gifted(obj, fonctions) {
     let infoComs = obj;
     if (!obj.categorie) {
         infoComs.categorie = "General";
