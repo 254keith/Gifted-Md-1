@@ -17,7 +17,7 @@ gifted({nomCom:"gift",reaction:"📡",categorie:"Ai"},async(dest,zk,commandeOpti
     
     
 const message = arg.join(' ');
- const response = await fetch(`http://api.brainshop.ai/get?bid=181821&key=ltFzFIXrtj2SVMTX&uid=[uid]&msg=${message}`);
+ const response = await fetch(`http://api.brainshop.ai/get?bid=181966&key=UZQRgrdCWJhZGbdx&uid=[uid]&msg=${message}`);
     const data = await response.json();
 await repondre(data.cnt);
     
