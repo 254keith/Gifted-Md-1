@@ -82,7 +82,7 @@ module.exports = {
    get_level_exp,
 } ;
 
-france( {
+gifted( {
   nomCom : "rank",
  categorie : "Fun",
    }, 
