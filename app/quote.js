@@ -1,6 +1,6 @@
-const { france } = require('../framework/france');
+const { gifted } = require('../gifted/gifted');
 
-france({ nomCom: 'quote', categorie: 'Group' }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: 'quote', categorie: 'Group' }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, verifGroupe, arg } = commandeOptions;
   if (!verifGroupe) {
     repondre('Commande réservée au groupe uniquement');
@@ -12,13 +12,13 @@ france({ nomCom: 'quote', categorie: 'Group' }, async (dest, zk, commandeOptions
       fetch('https://animechan.xyz/api/random')
         .then((response) => response.json())
         .then(async (quote) => {
-          repondre(`*FLASH-MD Quotes*
+          repondre(`*Gifted-Md Quotes*
 
 🎬 Anime: ${quote.anime}
 👤 Character: ${quote.character}
 💬 Quote: ${quote.quote}
 
-Powered by *France King*`);
+*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`);
         });
     } catch (e) {
       repondre('Erreur lors de la génération de la citation : ' + e.message);
@@ -30,7 +30,7 @@ Powered by *France King*`);
       fetch('https://animechan.xyz/api/random/character?name=' + query)
         .then((response) => response.json())
         .then(async (quote) => {
-          repondre(`FLASH-MD
+          repondre(`GIFTED-MD
 
 🎬 Anime: ${quote.anime}
 👤 Character: ${quote.character}
