@@ -39,11 +39,11 @@ let path = require("path");
 const FileType = require('file-type');
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
 //import chalk from 'chalk'
-const { verifierEtatJid , recupererActionJid } = require("./data/src/antilien");
-const { atbverifierEtatJid , atbrecupererActionJid } = require("./data/src/antibot");
+const { verifierEtatJid , recupererActionJid } = require("./src/antilien");
+const { atbverifierEtatJid , atbrecupererActionJid } = require("./src/antibot");
 let evt = require(__dirname + "/gifted/gifted");
-const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("./data/src/banUser");
-const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./data/src/banGroup");
+const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("./src/banUser");
+const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./src/banGroup");
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./data/src/onlyAdmin");
 //const //{loadCmd}=require("/gifted/functions")
 let { reagir } = require(__dirname + "/gifted/app");
