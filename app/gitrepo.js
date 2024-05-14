@@ -34,7 +34,7 @@ const gitdata = `
   *❲❒❳ Scan:* _https://web.giftedtechnexus.co.ke_
   
 __________________________________
-*ɢɪғᴛᴇᴅ-ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`;
+   *ɢɪғᴛᴇᴅ-ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`;
 
 
 await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
