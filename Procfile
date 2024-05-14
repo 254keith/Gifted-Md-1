@@ -1,1 +1,1 @@
-worker: node gifted/gifted.js
+worker: node data/gifted.js
