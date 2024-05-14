@@ -1,9 +1,9 @@
 const axios = require('axios');
 const fs = require('fs');
-const {france} = require('../framework/france');
+const {gifted} = require('../gifted/gifted');
 const { writeFile } = require('fs/promises')
 
-france({ nomCom: "weather",
+gifted({ nomCom: "weather",
         reaction: "🌡️",
         categorie: "Search" }, async (dest, zk, commandeOptions) => {
 
@@ -50,10 +50,7 @@ await repondre(`❄️ Weather in ${cityName}
 
 
 
-*°Powered by FLASH-MD*`);
-
-
-
+*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`);
 
             
 
