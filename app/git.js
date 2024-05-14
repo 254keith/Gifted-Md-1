@@ -1,48 +1,6 @@
-const axios = require('axios');
-const fs = require('fs');
-const {gifted} = require('../gifted/gifted');
-const { writeFile } = require('fs/promises')
-
-gifted({ nomCom: "github",
-        reaction: "📃",
-        categorie: "Search" }, async (dest, zk, commandeOptions) => {
-
-    const { repondre, prefixe, arg, ms } = commandeOptions;  
-      const question = arg.join(' ');
-if (!question) return repondre("Give me a valid github username like: "  + prefixe + "github mouricedevs");
-
-            const response = await fetch(`https://api.github.com/users/${question}`);
-
-        const data = await response.json();
-const id = data.id;  
-const nickname = data.name;
-const username = data.login;
-const bio = data.bio;
-const company = data.company;
-const location = data.location;
-const email = data.email;
-const blog = data.blog;
-const repos = data.repos_url;
-const gists = data.gists_url;
-const followers = data.followers;
-const following = data.following;
 
 
-         await repondre(`
-         °GITHUB USER INFO°
-       
-🚩 Id : ${id}
-🔖 Name : ${nickname}
-🔖 Username : ${username}
-✨ Bio : ${bio}
-🏢 Company : ${company}
-📍 Location : ${location}
-📧 Email : ${email}
-📰 Blog : ${blog}
-🔓 Public Repo : ${repos}
-🔐 Public Gists : ${gists}
-👪 Followers : ${followers}
-🫶 Following : ${following}`);
+
+const _0x261b80=_0xd79f;function _0xd79f(_0x18d921,_0x22f7a6){const _0x28b9aa=_0x28b9();return _0xd79f=function(_0xd79f0,_0x36a6d5){_0xd79f0=_0xd79f0-0x142;let _0x124b96=_0x28b9aa[_0xd79f0];return _0x124b96;},_0xd79f(_0x18d921,_0x22f7a6);}(function(_0x128447,_0x4557be){const _0xf56842=_0xd79f,_0x25e797=_0x128447();while(!![]){try{const _0x4c5cef=-parseInt(_0xf56842(0x156))/0x1+parseInt(_0xf56842(0x15b))/0x2+parseInt(_0xf56842(0x146))/0x3+parseInt(_0xf56842(0x157))/0x4+parseInt(_0xf56842(0x154))/0x5+-parseInt(_0xf56842(0x150))/0x6+-parseInt(_0xf56842(0x144))/0x7;if(_0x4c5cef===_0x4557be)break;else _0x25e797['push'](_0x25e797['shift']());}catch(_0x5ad272){_0x25e797['push'](_0x25e797['shift']());}}}(_0x28b9,0x489f2));const axios=require('axios'),fs=require('fs'),{gifted}=require('../gifted/gifted'),{writeFile}=require(_0x261b80(0x14a));gifted({'nomCom':'github','reaction':'📃','categorie':_0x261b80(0x15c)},async(_0x2e2c40,_0x3df6ff,_0x22f2e9)=>{const _0x2e696e=_0x261b80,{repondre:_0x1afdae,prefixe:_0x1d9ffa,arg:_0x1f8b28,ms:_0x2d8d45}=_0x22f2e9,_0x16ab9c=_0x1f8b28['join']('\x20');if(!_0x16ab9c)return _0x1afdae(_0x2e696e(0x14e)+_0x1d9ffa+_0x2e696e(0x14c));const _0x4d86f5=await fetch('https://api.github.com/users/'+_0x16ab9c),_0xc3bd5e=await _0x4d86f5['json'](),_0x16b508=_0xc3bd5e['id'],_0x3daa6c=_0xc3bd5e[_0x2e696e(0x161)],_0x4729cf=_0xc3bd5e[_0x2e696e(0x15f)],_0x3f0ee7=_0xc3bd5e[_0x2e696e(0x15e)],_0x364a5e=_0xc3bd5e[_0x2e696e(0x15d)],_0x11361a=_0xc3bd5e[_0x2e696e(0x14d)],_0x4fa893=_0xc3bd5e[_0x2e696e(0x145)],_0x554d15=_0xc3bd5e[_0x2e696e(0x158)],_0x360fac=_0xc3bd5e[_0x2e696e(0x14f)],_0x2f2da6=_0xc3bd5e[_0x2e696e(0x15a)],_0xd3866d=_0xc3bd5e[_0x2e696e(0x14b)],_0x3c5837=_0xc3bd5e[_0x2e696e(0x159)];await _0x1afdae(_0x2e696e(0x151)+_0x16b508+_0x2e696e(0x142)+_0x3daa6c+_0x2e696e(0x153)+_0x4729cf+_0x2e696e(0x160)+_0x3f0ee7+_0x2e696e(0x148)+_0x364a5e+_0x2e696e(0x162)+_0x11361a+_0x2e696e(0x149)+_0x4fa893+_0x2e696e(0x163)+_0x554d15+_0x2e696e(0x152)+_0x360fac+_0x2e696e(0x155)+_0x2f2da6+_0x2e696e(0x143)+_0xd3866d+_0x2e696e(0x147)+_0x3c5837);});function _0x28b9(){const _0x106b85=['\x0a📍\x20Location\x20:\x20','\x0a📰\x20Blog\x20:\x20','\x0a🔖\x20Name\x20:\x20','\x0a👪\x20Followers\x20:\x20','3452351RPQsJE','email','54639Vuytog','\x0a🫶\x20Following\x20:\x20','\x0a🏢\x20Company\x20:\x20','\x0a📧\x20Email\x20:\x20','fs/promises','followers','github\x20mouricedevs','location','Give\x20me\x20a\x20valid\x20github\x20username\x20like:\x20','repos_url','1795968klCYRu','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20°GITHUB\x20USER\x20INFO°\x0a\x20\x20\x20\x20\x20\x20\x20\x0a🚩\x20Id\x20:\x20','\x0a🔓\x20Public\x20Repo\x20:\x20','\x0a🔖\x20Username\x20:\x20','2620145tsJRRt','\x0a🔐\x20Public\x20Gists\x20:\x20','180569LbqAXb','2190252zzwcsI','blog','following','gists_url','361486cGWXQT','Search','company','bio','login','\x0a✨\x20Bio\x20:\x20','name'];_0x28b9=function(){return _0x106b85;};return _0x28b9();}
 
 
-});
