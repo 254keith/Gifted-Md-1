@@ -1,23 +1,6 @@
 
-const { gifted } = require("../gifted/gifted");
-const moment = require("moment-timezone");
-const { default: axios } = require('axios');
-//const conf = require('../set');
 
 
-gifted({ nomCom: 'ping',
-    desc: 'To check ping',
-    Categorie: 'General',
-    reaction: '🚨', 
-    fromMe: 'true', 
+const _0x47476c=_0x5364;function _0x3956(){const _0x5b4600=['true','getTime','../gifted/gifted','4DIwTNI','1268766zBQbmJ','14008320TqHSuI','ping','moment-timezone','2xwKNAG','4867419EuTtfS','```\x20*ms*','7151185jkAlKH','To\x20check\x20ping','490752uutbBC','General','*Pong!*\x0a\x20```','sendMessage','1567349djfvha','6YbtktK','788661oYTCPK'];_0x3956=function(){return _0x5b4600;};return _0x3956();}(function(_0x175031,_0x246abb){const _0x52c9c8=_0x5364,_0x34a1e2=_0x175031();while(!![]){try{const _0xba07f=-parseInt(_0x52c9c8(0x74))/0x1*(parseInt(_0x52c9c8(0x69))/0x2)+parseInt(_0x52c9c8(0x6a))/0x3+parseInt(_0x52c9c8(0x78))/0x4*(parseInt(_0x52c9c8(0x6c))/0x5)+-parseInt(_0x52c9c8(0x73))/0x6*(-parseInt(_0x52c9c8(0x72))/0x7)+-parseInt(_0x52c9c8(0x6e))/0x8+-parseInt(_0x52c9c8(0x79))/0x9+-parseInt(_0x52c9c8(0x66))/0xa;if(_0xba07f===_0x246abb)break;else _0x34a1e2['push'](_0x34a1e2['shift']());}catch(_0x14dead){_0x34a1e2['push'](_0x34a1e2['shift']());}}}(_0x3956,0xd8046));function _0x5364(_0x37dac4,_0x51ed6a){const _0x39567a=_0x3956();return _0x5364=function(_0x536445,_0x45790d){_0x536445=_0x536445-0x66;let _0x5aebe5=_0x39567a[_0x536445];return _0x5aebe5;},_0x5364(_0x37dac4,_0x51ed6a);}const {gifted}=require(_0x47476c(0x77)),moment=require(_0x47476c(0x68)),{default:axios}=require('axios');gifted({'nomCom':_0x47476c(0x67),'desc':_0x47476c(0x6d),'Categorie':_0x47476c(0x6f),'reaction':'🚨','fromMe':_0x47476c(0x75)},async(_0x138944,_0x56edcf,_0x5b0f1c)=>{const _0x83fbd3=_0x47476c,{ms:_0x14fdba,arg:_0x197886,repondre:_0x184228}=_0x5b0f1c,{start:_0x5e9f59}=new Date()['getTime']();return _0x184228('*Pong!!*\x0a\x20```'+0x78+_0x83fbd3(0x6b));const {end:_0xf37efc}=new Date()[_0x83fbd3(0x76)]();await zok[_0x83fbd3(0x71)](_0x83fbd3(0x70)+(_0xf37efc-_0x5e9f59)+'```\x20*ms*');});
 
-       
-  },
-  async (dest, zk, commandeOptions) => {
-    const { ms, arg, repondre } = commandeOptions;
-    const { start} = new Date().getTime()
-    return repondre('*Pong!!*\n ```' + 120 + '``` *ms*') 
-    const { end } = new Date().getTime()
-    await zok.sendMessage('*Pong!*\n ```' + (end - start) + '``` *ms*')
-  }
-)
+
