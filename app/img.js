@@ -1,33 +1,6 @@
 
 
 
-const {gifted} = require('../gifted/gifted');
-var gis = require('g-i-s');
+const _0x2d6a1c=_0x1a19;(function(_0x18573c,_0x13027b){const _0x4ecf75=_0x1a19,_0x181d65=_0x18573c();while(!![]){try{const _0xd117a4=-parseInt(_0x4ecf75(0x13a))/0x1+-parseInt(_0x4ecf75(0x142))/0x2+parseInt(_0x4ecf75(0x133))/0x3*(-parseInt(_0x4ecf75(0x138))/0x4)+-parseInt(_0x4ecf75(0x139))/0x5+-parseInt(_0x4ecf75(0x137))/0x6+parseInt(_0x4ecf75(0x140))/0x7+parseInt(_0x4ecf75(0x141))/0x8;if(_0xd117a4===_0x13027b)break;else _0x181d65['push'](_0x181d65['shift']());}catch(_0x15e180){_0x181d65['push'](_0x181d65['shift']());}}}(_0x472a,0x431f1));const {gifted}=require(_0x2d6a1c(0x13c));var gis=require(_0x2d6a1c(0x13e));function _0x1a19(_0x1a1479,_0x374b9f){const _0x472a7a=_0x472a();return _0x1a19=function(_0x1a1914,_0x28d0f){_0x1a1914=_0x1a1914-0x133;let _0x216962=_0x472a7a[_0x1a1914];return _0x216962;},_0x1a19(_0x1a1479,_0x374b9f);}function _0x472a(){const _0x22cb1f=['Search','../gifted/gifted','which\x20image\x20?\x20!','g-i-s','oups\x20une\x20error\x20','1696303WNzZmY','7580568RAcBqt','375256PjGCJS','3cbJStK','url','img','sendMessage','776766AAYdOU','1823084XJtfhN','123920JvPxDE','117327gNkQHL'];_0x472a=function(){return _0x22cb1f;};return _0x472a();}gifted({'nomCom':_0x2d6a1c(0x135),'categorie':_0x2d6a1c(0x13b),'reaction':'📷'},async(_0x47a179,_0x5b6280,_0x3b0bbe)=>{const _0x253839=_0x2d6a1c,{repondre:_0x2115d9,ms:_0x481b4e,arg:_0x4d07c8}=_0x3b0bbe;if(!_0x4d07c8[0x0]){_0x2115d9(_0x253839(0x13d));return;}const _0x28c079=_0x4d07c8['join']('\x20');gis(_0x28c079,_0x3ef8e4);function _0x3ef8e4(_0x547f71,_0x31f3a9){const _0x2389e6=_0x253839;if(_0x547f71)_0x2115d9(_0x2389e6(0x13f));else for(var _0xe5162c=0x0;_0xe5162c<0x5;_0xe5162c++){_0x5b6280[_0x2389e6(0x136)](_0x47a179,{'image':{'url':_0x31f3a9[_0xe5162c][_0x2389e6(0x134)]}},{'quoted':_0x481b4e});}}});
 
 
-gifted({
-  nomCom: "img",
-  categorie: "Search",
-  reaction: "📷"
-},
-async (dest, zk, commandeOptions) => {
-  const { repondre, ms, arg } = commandeOptions;
-
-  if (!arg[0]) {
-    repondre('which image ? !');
-    return;
-  }
-
-  const searchTerm = arg.join(" ");
-  //repondre("termes " +searchTerm);
-  gis(searchTerm,envoiImage);
-
-  function envoiImage(e,r)
-   {
-        if(e){repondre("oups une error ")}else{for(var a=0;a<5;a++){zk.sendMessage(dest,{image:{url:r[a].url}},{quoted:ms});}}
-    
-   }
-
- //gis(searchTerm,envoiImage);
-      
-});
