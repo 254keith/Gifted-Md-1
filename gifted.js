@@ -185,7 +185,7 @@ const MsgInbox = origineMessage?.endsWith("@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
-            var dev = [k1,suhail_ser, k2,k3,k4].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+            var dev = [k1,the_goat, k2,k3,k4].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
             console.log("\t [][]...{GIFTED-MD}...[][]");
             console.log("=========== New message ===========");
