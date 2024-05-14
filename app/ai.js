@@ -1,4 +1,4 @@
-const { france } = require('../gifted/gifted');
+const { gifted } = require('../gifted/gifted');
 const traduire = require("../gifted/traduction") ;
 const { default: axios } = require('axios');
 //const conf = require('../set');
