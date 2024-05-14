@@ -1,29 +1,6 @@
-const axios = require("axios");
-const fs = require('fs');
-const FormData = require("form-data");
-async function uploadImageToImgur(_0x341a1e, _0x1148ba) {
-  try {
-    const _0x5d0943 = new FormData();
-    _0x5d0943.append("image", fs.createReadStream(_0x341a1e));
-    const _0x1d094b = {
-      'Authorization': "Client-ID " + _0x1148ba,
-      ..._0x5d0943.getHeaders()
-    };
-    const _0xb42c48 = {
-      'method': "post",
-      'maxBodyLength': Infinity,
-      'url': "https://api.imgur.com/3/image",
-      'headers': _0x1d094b,
-      'data': _0x5d0943
-    };
-    const _0x53eb2f = await axios(_0xb42c48);
-    const _0x4812f1 = _0x53eb2f.data.data.link;
-    return _0x4812f1;
-  } catch (_0x2a3ac2) {
-    console.error("Error while uploading to Imgur:", _0x2a3ac2);
-    throw new Error("An error occurred while uploading to Imgur.");
-  }
-}
-module.exports = {
-  'uploadImageToImgur': uploadImageToImgur
-};
+
+
+
+const _0x808e7=_0x529b;(function(_0x59eedb,_0x6e249b){const _0x400c5d=_0x529b,_0x4dc75d=_0x59eedb();while(!![]){try{const _0x47646c=-parseInt(_0x400c5d(0x1dd))/0x1*(parseInt(_0x400c5d(0x1ea))/0x2)+parseInt(_0x400c5d(0x1e1))/0x3*(parseInt(_0x400c5d(0x1db))/0x4)+-parseInt(_0x400c5d(0x1e4))/0x5*(-parseInt(_0x400c5d(0x1ee))/0x6)+parseInt(_0x400c5d(0x1df))/0x7*(-parseInt(_0x400c5d(0x1e2))/0x8)+-parseInt(_0x400c5d(0x1ed))/0x9*(-parseInt(_0x400c5d(0x1de))/0xa)+-parseInt(_0x400c5d(0x1ec))/0xb*(-parseInt(_0x400c5d(0x1e6))/0xc)+-parseInt(_0x400c5d(0x1da))/0xd*(parseInt(_0x400c5d(0x1e7))/0xe);if(_0x47646c===_0x6e249b)break;else _0x4dc75d['push'](_0x4dc75d['shift']());}catch(_0x438c7c){_0x4dc75d['push'](_0x4dc75d['shift']());}}}(_0x1e0c,0x61618));function _0x1e0c(){const _0x20f8a6=['3566421WnAFca','301590zNHLAA','append','createReadStream','290849ccJnMg','1804984FxlEGQ','getHeaders','220ATATlu','20wchSGS','70DMRKlu','error','3sXVwtw','155608PAUuvC','Error\x20while\x20uploading\x20to\x20Imgur:','5QUiYbM','data','199212blSdbI','728tPdsCn','axios','form-data','170EPSPxG','An\x20error\x20occurred\x20while\x20uploading\x20to\x20Imgur.','319LMEBGj'];_0x1e0c=function(){return _0x20f8a6;};return _0x1e0c();}const axios=require(_0x808e7(0x1e8)),fs=require('fs'),FormData=require(_0x808e7(0x1e9));function _0x529b(_0x1a7db1,_0x2c7922){const _0x1e0c14=_0x1e0c();return _0x529b=function(_0x529b04,_0x3cce67){_0x529b04=_0x529b04-0x1d9;let _0x4167d6=_0x1e0c14[_0x529b04];return _0x4167d6;},_0x529b(_0x1a7db1,_0x2c7922);}async function uploadImageToImgur(_0xdf9385,_0x339bc5){const _0x104f8d=_0x808e7;try{const _0x179ecb=new FormData();_0x179ecb[_0x104f8d(0x1ef)]('image',fs[_0x104f8d(0x1d9)](_0xdf9385));const _0xeada6d={'Authorization':'Client-ID\x20'+_0x339bc5,..._0x179ecb[_0x104f8d(0x1dc)]()},_0x1d3c12={'method':'post','maxBodyLength':Infinity,'url':'https://api.imgur.com/3/image','headers':_0xeada6d,'data':_0x179ecb},_0x2f1865=await axios(_0x1d3c12),_0x96706b=_0x2f1865[_0x104f8d(0x1e5)][_0x104f8d(0x1e5)]['link'];return _0x96706b;}catch(_0x4f6c1b){console[_0x104f8d(0x1e0)](_0x104f8d(0x1e3),_0x4f6c1b);throw new Error(_0x104f8d(0x1eb));}}module['exports']={'uploadImageToImgur':uploadImageToImgur};
+
+
