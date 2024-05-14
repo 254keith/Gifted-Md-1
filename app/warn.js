@@ -1,9 +1,9 @@
-const { france } = require('../framework/france');
-const {ajouterUtilisateurAvecWarnCount , getWarnCountByJID , resetWarnCountByJID} = require('../bdd/warn')
+const { gifted } = require('../gifted/gifted');
+const {ajouterUtilisateurAvecWarnCount , getWarnCountByJID , resetWarnCountByJID} = require('../data/src/warn')
 const s = require("../set")
 
 
-france(
+gifted(
     {
         nomCom : 'warn',
         categorie : 'Group'
