@@ -1,7 +1,7 @@
 const util = require('util');
 const fs = require('fs-extra');
-const { france } = require(__dirname + "/../framework/france");
-const { format } = require(__dirname + "/../framework/mesfonctions");
+const { gifted } = require(__dirname + "/../gifted/gifted");
+const { format } = require(__dirname + "/../gifted/functions");
 const os = require("os");
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
@@ -18,9 +18,9 @@ const runtime = function (seconds) {
  return dDisplay + hDisplay + mDisplay + sDisplay; 
  } 
 
-france({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//france");
+    let { cm } = require(__dirname + "/../gifted/gifted");
     var coms = {};
     var mode = "public";
 
@@ -43,27 +43,27 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-╭────✧𝐅𝐋𝐀𝐒𝐇-𝐌𝐃✧────◆
-┃❃╭──────────────
-┃❃│ Prefix : ${s.PREFIXE} 
-┃❃│ User :  ${s.OWNER_NAME}
-┃❃│ Time : ${temps}  
-┃❃│ Platform : Linux
-┃❃│ Date : ${date} 
-┃❃│ Mode : ${mode}
-┃❃│ Commands : ${cm.length}  
-┃❃│ Ram : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())} 
-┃❃│ Uptime : ${runtime(process.uptime())} 
-┃❃╰───────────────
-╰─────✧The-GOAT✧─────◆ \n`;
+╭═══ *〘 ɢɪғᴛᴇᴅ-ᴍᴅ 〙* ═⊷
+┃▫╭────────────
+┃▫│ *ᴏᴡɴᴇʀ:* Gifted Tech
+┃▫│ *ᴍᴏᴅᴇ:* ${mode}
+┃▫│ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())} 
+┃▫│ *ʀᴀᴍ:* ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())} 
+┃▫│ *ᴛɪᴍᴇ-ɴᴏᴡ:* ${temps}
+┃▫│ *ᴅᴀᴛᴇ-ᴛᴏᴅᴀʏ:* ${date} 
+┃▫│ *ᴄᴏᴍᴍᴀɴᴅs:* ${cm.length} 
+┃▫│ *ᴛʜᴇᴍᴇ:* Gifted
+┃▫╰─────────────
+╰═══════════════⊷                            
+  ${readmore}\n`;
 
   let menuMsg=`  
 
-*◇ FLASH-MD COMMANDS ◇*\n`;
+ *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*\n`;
  
   for (const cat in coms) {
         menuMsg += `
-*╭────☉⁠☢️⁠⁠${cat}☢️☉⁠⊷*`;
+*╭────☉⁠🔹${cat}🔹☉⁠⊷*`;
         for (const cmd of coms[cat]) {
         menuMsg += ` 
 *│❒⁠⁠⁠⁠${cmd}*`;
@@ -73,36 +73,28 @@ const date = moment().format('DD/MM/YYYY');
     }
 
     menuMsg += `
-◇ *THE FLASH MULTI DEVICE* ◇
-
-   *Released: 22.2.2024*
-   
- _Thanks For choosing FLASH-MD_
-
-  Created by *France King ©²0²⁴* 
-  
-     *KEEP USING FLASH-MD*
+**ɢɪғᴛᴇᴅ ᴍᴅ*
 `;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Gifted-MD*, développé par Djalega++" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("🥵🥵 Menu error " + e);
+        repondre("🥵🥵 Menu error " + e);
     }
 } 
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*📌France King*" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*" }, { quoted: ms });
     }
     catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("🥵🥵 Menu error " + e);
+        repondre("🥵🥵 Menu error " + e);
     }
 } 
 else {
