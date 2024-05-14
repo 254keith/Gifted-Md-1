@@ -1,49 +1,6 @@
-const axios = require("axios");
-const { Sticker, StickerTypes } = require("wa-sticker-formatter");
-const {gifted} = require("../gifted/gifted");
 
-gifted({
-  nomCom: "stickersearch",
-  categorie: 'Search',
-  reaction: "🍁"
-},
-async (dest, zk, commandeOptions) => {
-  const { repondre, ms, arg, nomAuteurMessage } = commandeOptions;
 
-  if (!arg[0]) {
-    repondre("where is the request ? !");
-    return;
-  }
 
-  const gifSearchTerm = arg.join(" ");
-  const tenorApiKey = "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c"; // Remplacez par votre clé d'API Tenor
+const _0x24201d=_0x124a;function _0x4c62(){const _0xf3bf41=['axios','Erreur\x20lors\x20de\x20la\x20recherche\x20de\x20stickers\x20:','../gifted/gifted','47360PqIJBT','error','stickersearch','FULL','&key=','url','1917WHYqyv','4PEZgYF','where\x20is\x20the\x20request\x20?\x20!','toBuffer','https://tenor.googleapis.com/v2/search?q=','6200uMGCeM','1491655LhRsuD','Search','&client_key=my_project&limit=8&media_filter=gif','wa-sticker-formatter','media_formats','results','685506QrFGUk','data','Erreur\x20lors\x20de\x20la\x20recherche\x20de\x20stickers.','1681631nclcAt','12345','182796exLBmz','Gifted-Md','transparent','107148nIJTsk','sendMessage','gif'];_0x4c62=function(){return _0xf3bf41;};return _0x4c62();}(function(_0x52bb63,_0x57e18e){const _0x21f8a0=_0x124a,_0xb2c8ff=_0x52bb63();while(!![]){try{const _0x16e899=parseInt(_0x21f8a0(0x117))/0x1+-parseInt(_0x21f8a0(0x111))/0x2+-parseInt(_0x21f8a0(0x10e))/0x3+-parseInt(_0x21f8a0(0xfe))/0x4*(parseInt(_0x21f8a0(0x103))/0x5)+parseInt(_0x21f8a0(0x109))/0x6+parseInt(_0x21f8a0(0x10c))/0x7+parseInt(_0x21f8a0(0x102))/0x8*(parseInt(_0x21f8a0(0xfd))/0x9);if(_0x16e899===_0x57e18e)break;else _0xb2c8ff['push'](_0xb2c8ff['shift']());}catch(_0x3fb083){_0xb2c8ff['push'](_0xb2c8ff['shift']());}}}(_0x4c62,0x259e2));function _0x124a(_0x4be303,_0x4c5668){const _0x4c62b0=_0x4c62();return _0x124a=function(_0x124a2c,_0x4c3b21){_0x124a2c=_0x124a2c-0xf9;let _0x1608c0=_0x4c62b0[_0x124a2c];return _0x1608c0;},_0x124a(_0x4be303,_0x4c5668);}const axios=require(_0x24201d(0x114)),{Sticker,StickerTypes}=require(_0x24201d(0x106)),{gifted}=require(_0x24201d(0x116));gifted({'nomCom':_0x24201d(0xf9),'categorie':_0x24201d(0x104),'reaction':'🍁'},async(_0x440c92,_0x5cf47f,_0x596fe3)=>{const _0xd61023=_0x24201d,{repondre:_0x405211,ms:_0x22b631,arg:_0x2fac41,nomAuteurMessage:_0x31b074}=_0x596fe3;if(!_0x2fac41[0x0]){_0x405211(_0xd61023(0xff));return;}const _0x3bf2be=_0x2fac41['join']('\x20'),_0x5ee81b='AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c';try{for(i=0x0;i<0x5;i++){const _0x5243cc=await axios['get'](_0xd61023(0x101)+_0x3bf2be+_0xd61023(0xfb)+_0x5ee81b+_0xd61023(0x105)),_0x3dc30e=_0x5243cc[_0xd61023(0x10a)][_0xd61023(0x108)][i][_0xd61023(0x107)][_0xd61023(0x113)][_0xd61023(0xfc)],_0x1abdb9=_0x31b074,_0x34b4ed=new Sticker(_0x3dc30e,{'pack':_0x1abdb9,'author':_0xd61023(0x10f),'type':StickerTypes[_0xd61023(0xfa)],'categories':['🤩','🎉'],'id':_0xd61023(0x10d),'quality':0x3c,'background':_0xd61023(0x110)}),_0x14530a=await _0x34b4ed[_0xd61023(0x100)]();_0x5cf47f[_0xd61023(0x112)](_0x440c92,{'sticker':_0x14530a},{'quoted':_0x22b631});}}catch(_0xa78496){console[_0xd61023(0x118)](_0xd61023(0x115),_0xa78496),_0x405211(_0xd61023(0x10b));}});
 
-  try { for ( i = 0 ; i < 5 ; i++) {
-    const gif = await axios.get(
-      `https://tenor.googleapis.com/v2/search?q=${gifSearchTerm}&key=${tenorApiKey}&client_key=my_project&limit=8&media_filter=gif`
-    );
 
-    const gifUrl = gif.data.results[i].media_formats.gif.url;
-
-    
-   
-
-    // Assurez-vous de remplacer les valeurs manquantes dans la création du sticker
-    const packname = nomAuteurMessage; // Remplacez par le nom de votre pack de stickers
-
-    const stickerMess = new Sticker(gifUrl, {
-      pack: packname,
-      author: 'Gifted-Md',
-      type: StickerTypes.FULL,
-      categories: ["🤩", "🎉"],
-      id: "12345",
-      quality: 60,
-      background: "transparent",
-    });
-    const stickerBuffer2 = await stickerMess.toBuffer();
-    zk.sendMessage(dest, { sticker: stickerBuffer2 }, { quoted: ms }); }
-  } catch (error) {
-    console.error("Erreur lors de la recherche de stickers :", error);
-    repondre("Erreur lors de la recherche de stickers.");
-  }
-});
