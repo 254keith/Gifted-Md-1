@@ -1,9 +1,9 @@
-const { france } = require('../framework/france');
-const {addOrUpdateDataInAlive , getDataFromAlive} = require('../bdd/alive')
+const { gifted } = require('../gifted/gifted');
+const {addOrUpdateDataInAlive , getDataFromAlive} = require('../data/src/alive')
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 
-france(
+gifted(
     {
         nomCom : 'alive',
         categorie : 'General'
@@ -37,22 +37,22 @@ const date = moment().format('DD/MM/YYYY');
     const alivemsg = `
      ${message}
    
-*Owner* : ${s.OWNER_NAME}
+*Owner* : Gifted Tech
 *Mode* : ${mode}
 *Date* : ${date}
 *Time* : ${temps}
 
 
  
- *FLASH-MD by _France King_ is alive*`
+ *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0 is Alive*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
         zk.sendMessage(dest, { video: { url: lien }, caption: alivemsg }, { quoted: ms });
     }
     catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("🥵🥵 Menu error " + e);
+        repondre("🥵🥵 Menu error " + e);
     }
 } 
 // Checking for .jpeg or .png
@@ -61,8 +61,8 @@ else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
         zk.sendMessage(dest, { image: { url: lien }, caption: alivemsg }, { quoted: ms });
     }
     catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
+        console.log("🥵🥵 Menu error " + e);
+        repondre("🥵🥵 Menu error " + e);
     }
 } 
 else {
