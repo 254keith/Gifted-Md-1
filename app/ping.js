@@ -16,7 +16,7 @@ gifted({ nomCom: 'ping',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
     let timeStart = Date.now();
-    return repondre('*Pong!!*\n ```' + 90 + '``` *ms*') 
+    return repondre('*Pong!!*\n ```' + 120 + '``` *ms*') 
     let timeEnd = Date.now();
     await zk.sendMessage(dest, {texte:'*Pong!*\n *' + (timeStart - timeEnd) + '``` *ms*')
   }
