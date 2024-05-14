@@ -1,14 +1,14 @@
-const {france}=require("../framework/france")
+const {gifted}=require("../gifted/gifted")
 const {getContentType}=require("@whiskeysockets/baileys")
 
 
 
-france({nomCom:"vv",categorie:"General",reaction:"🤩"},async(dest,zk,commandeOptions)=>{
+gifted({nomCom:"vv",categorie:"General",reaction:"🤩"},async(dest,zk,commandeOptions)=>{
 
 const {ms,msgRepondu,repondre}=commandeOptions;
 
 
-if(!msgRepondu){return repondre("*Mentionne a view once media* .");}
+if(!msgRepondu){return repondre("*Mentionn a view once media* .");}
 
 
 if(msgRepondu.viewOnceMessageV2)
