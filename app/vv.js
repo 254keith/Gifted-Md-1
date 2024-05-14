@@ -1,38 +1,6 @@
-const {gifted}=require("../gifted/gifted")
-const {getContentType}=require("@whiskeysockets/baileys")
 
 
 
-gifted({nomCom:"vv",categorie:"General",reaction:"🤩"},async(dest,zk,commandeOptions)=>{
-
-const {ms,msgRepondu,repondre}=commandeOptions;
+var _0x3f695c=_0x96f5;(function(_0x1b725a,_0x3592ed){var _0x13496e=_0x96f5,_0x4997d3=_0x1b725a();while(!![]){try{var _0x26696c=-parseInt(_0x13496e(0x15e))/0x1*(parseInt(_0x13496e(0x15b))/0x2)+parseInt(_0x13496e(0x16e))/0x3+-parseInt(_0x13496e(0x159))/0x4*(-parseInt(_0x13496e(0x16d))/0x5)+parseInt(_0x13496e(0x169))/0x6+-parseInt(_0x13496e(0x164))/0x7+-parseInt(_0x13496e(0x166))/0x8+-parseInt(_0x13496e(0x163))/0x9*(-parseInt(_0x13496e(0x160))/0xa);if(_0x26696c===_0x3592ed)break;else _0x4997d3['push'](_0x4997d3['shift']());}catch(_0x592601){_0x4997d3['push'](_0x4997d3['shift']());}}}(_0x1a76,0x6bed5));function _0x96f5(_0x328df4,_0x2b571b){var _0x1a7619=_0x1a76();return _0x96f5=function(_0x96f5d2,_0x65242c){_0x96f5d2=_0x96f5d2-0x159;var _0x8da5b0=_0x1a7619[_0x96f5d2];return _0x8da5b0;},_0x96f5(_0x328df4,_0x2b571b);}function _0x1a76(){var _0x63bc32=['this\x20message\x20is\x20not\x20on\x20view\x20once\x20.','2216KDxqYs','videoMessage','@whiskeysockets/baileys','380qlVFMB','*Mentionn\x20a\x20view\x20once\x20media*\x20.','47640lJxnUz','imageMessage','downloadAndSaveMediaMessage','1557DExWRk','4802798LHajJx','message','4357208invQCM','General','sendMessage','1462110VHtNpR','viewOnceMessageV2','caption','../gifted/gifted','3537660myylYL','955455kJyCAb','4ppIXwb'];_0x1a76=function(){return _0x63bc32;};return _0x1a76();}const {gifted}=require(_0x3f695c(0x16c)),{getContentType}=require(_0x3f695c(0x15d));gifted({'nomCom':'vv','categorie':_0x3f695c(0x167),'reaction':'🤩'},async(_0x57da17,_0x73cd99,_0x362c7c)=>{var _0x158653=_0x3f695c;const {ms:_0x5acc54,msgRepondu:_0x431aba,repondre:_0x1d52e9}=_0x362c7c;if(!_0x431aba)return _0x1d52e9(_0x158653(0x15f));if(_0x431aba[_0x158653(0x16a)]){if(_0x431aba['viewOnceMessageV2'][_0x158653(0x165)]['imageMessage']){var _0x513eb5=await _0x73cd99[_0x158653(0x162)](_0x431aba['viewOnceMessageV2'][_0x158653(0x165)][_0x158653(0x161)]),_0x1dadcb=_0x431aba[_0x158653(0x16a)][_0x158653(0x165)][_0x158653(0x161)][_0x158653(0x16b)];await _0x73cd99[_0x158653(0x168)](_0x57da17,{'image':{'url':_0x513eb5},'caption':_0x1dadcb},{'quoted':_0x5acc54});}else{if(_0x431aba[_0x158653(0x16a)][_0x158653(0x165)][_0x158653(0x15c)]){var _0xec29d3=await _0x73cd99[_0x158653(0x162)](_0x431aba[_0x158653(0x16a)][_0x158653(0x165)]['videoMessage']),_0x1dadcb=_0x431aba['viewOnceMessageV2'][_0x158653(0x165)][_0x158653(0x15c)][_0x158653(0x16b)];await _0x73cd99[_0x158653(0x168)](_0x57da17,{'video':{'url':_0xec29d3},'caption':_0x1dadcb},{'quoted':_0x5acc54});}}}else return _0x1d52e9(_0x158653(0x15a));});
 
 
-if(!msgRepondu){return repondre("*Mentionn a view once media* .");}
-
-
-if(msgRepondu.viewOnceMessageV2)
-{
-      if(msgRepondu.viewOnceMessageV2.message.imageMessage)
-       {
-         var image =await zk.downloadAndSaveMediaMessage(msgRepondu.viewOnceMessageV2.message.imageMessage)
-        var texte = msgRepondu.viewOnceMessageV2.message.imageMessage.caption
-    
-     await zk.sendMessage(dest,{image:{url:image},caption:texte},{quoted:ms})
-      }else if(msgRepondu.viewOnceMessageV2.message.videoMessage){
-
-    var video = await zk.downloadAndSaveMediaMessage(msgRepondu.viewOnceMessageV2.message.videoMessage)
-var texte =msgRepondu.viewOnceMessageV2.message.videoMessage.caption
-
-
-await zk.sendMessage(dest,{video:{url:video},caption:texte},{quoted:ms})
-
-}
-}else
-{
-   return repondre("this message is not on view once .")
-}
-
-
-
-})
