@@ -1,4 +1,4 @@
-const {france} = require('../framework/france');
+const {gifted} = require('../gifted/gifted');
 const fs = require('fs');
 const ig = require('instagram-url-dl');
 
@@ -6,7 +6,7 @@ const ig = require('instagram-url-dl');
 const mumaker = require("mumaker");
 const getFBInfo = require("@xaviabot/fb-downloader");
 
-france({nomCom : "igdl" , categorie : "Flash-Md"},async (dest , zk , commandeOptions)=>{
+gifted({nomCom : "igdl" , categorie : "Downloader"},async (dest , zk , commandeOptions)=>{
   const {ms,repondre,arg} = commandeOptions ;
 
   let link = arg.join(' ')
@@ -18,7 +18,7 @@ france({nomCom : "igdl" , categorie : "Flash-Md"},async (dest , zk , commandeOpt
   
   let choix = response.data
 
-    zk.sendMessage(dest,{video : {url : choix[0].url},caption : "téléchargeur de video ig propulsé par *Zokou-Md*",gifPlayback : false },{quoted : ms}) 
+    zk.sendMessage(dest,{video : {url : choix[0].url},caption : "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*",gifPlayback : false },{quoted : ms}) 
   } catch (e) {repondre("erreur survenue lors du téléchargement \n " + e)}
 
   
@@ -27,9 +27,9 @@ france({nomCom : "igdl" , categorie : "Flash-Md"},async (dest , zk , commandeOpt
 });
 
 
-france({
+gifted({
   nomCom: "fbdl",
-  categorie: "Téléchargement",
+  categorie: "Download",
   reaction: "📽️"
 },
 async (dest, zk, commandeOptions) => {
@@ -50,7 +50,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'Téléchargeur de vidéo Facebook, propulsé par *zokou-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.hd  }, caption: '*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
@@ -66,7 +66,7 @@ async (dest, zk, commandeOptions) => {
 
 
 
-france({ nomCom: "tikt", categorie: "Téléchargement", reaction: "🎵" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "tikt", categorie: "Download", reaction: "🎵" }, async (dest, zk, commandeOptions) => {
   const { arg, ms, prefixe,repondre } = commandeOptions;
   if (!arg[0]) {
     repondre(`Voici comment utiliser la commande:\n ${prefixe}veiller lien_video_tiktok`);
@@ -110,9 +110,9 @@ france({ nomCom: "tikt", categorie: "Téléchargement", reaction: "🎵" }, asyn
     });
 });
 
-france({
+gifted({
   nomCom: "fbdl2",
-  categorie: "Téléchargement",
+  categorie: "Download",
   reaction: "📽️"
 },
 async (dest, zk, commandeOptions) => {
@@ -133,7 +133,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'Téléchargeur de vidéo Facebook, propulsé par *zokou-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.sd  }, caption: '*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
