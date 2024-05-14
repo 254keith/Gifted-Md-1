@@ -1,15 +1,15 @@
 const axios = require('axios');
 const fs = require('fs');
-const {france} = require('../framework/france');
+const {gifted} = require('../gifted/gifted');
 const { writeFile } = require('fs/promises')
 
-france({ nomCom: "github",
+gifted({ nomCom: "github",
         reaction: "📃",
         categorie: "Search" }, async (dest, zk, commandeOptions) => {
 
     const { repondre, prefixe, arg, ms } = commandeOptions;  
       const question = arg.join(' ');
-if (!question) return repondre("Give me a valid github username like: "  + prefixe + "github franceking1");
+if (!question) return repondre("Give me a valid github username like: "  + prefixe + "github mouricedevs");
 
             const response = await fetch(`https://api.github.com/users/${question}`);
 
