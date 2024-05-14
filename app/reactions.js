@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { france } = require("../framework/france");
+const { gifted } = require("../gifted/gifted");
 const fs = require("fs-extra");
 const { exec } = require("child_process");
 const child_process = require('child_process');
@@ -28,7 +28,7 @@ const GIFBufferToVideoBuffer = async (image) => {
 };
 
 const generateReactionCommand = (reactionName, reactionEmoji) => {
-    france({
+    gifted({
         nomCom: reactionName,
         categorie: "Reaction",
         reaction: reactionEmoji,
