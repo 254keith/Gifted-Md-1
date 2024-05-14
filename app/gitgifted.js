@@ -1,42 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const { gifted } = require("../gifted/gifted");
-gifted({ nomCom: "gifted",reaction: "😌"}, async (dest, zk, commandeOptions) => {
-
-
-const githubRepo = 'https://api.github.com/repos/mouricedevs/Gifted-Md';
-
-const img = 'https://telegra.ph/file/a202f454c9532c3f5b7f8.jpg';
-
-    const response = await fetch(githubRepo); 
-        const data = await response.json(); 
- 
-        if (data) {
-            const repoInfo = {
-                stars: data.stargazers_count,
-                forks: data.forks_count,
-                
-                
-               
-            };
-
-
-const gitdata = `
-*A Total of ${repoInfo.forks} People have Deployed and are Currently using Gifted-Md.*
-
-*${repoInfo.stars} People have starred it Showing a sign of Loving it.*
-
-*ɢɪғᴛᴇᴅ-ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`;
+'use strict';
 
 
 
 
-await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
-
-} else {
-console.log("Could not fetch data")
-
-}
 
 
-});
+const _0x1a5922=_0x1c23;(function(_0x58c28d,_0x4e023a){const _0x2ee42d=_0x1c23,_0x3140aa=_0x58c28d();while(!![]){try{const _0x1ebd94=-parseInt(_0x2ee42d(0xcc))/0x1+-parseInt(_0x2ee42d(0xde))/0x2+-parseInt(_0x2ee42d(0xd3))/0x3*(-parseInt(_0x2ee42d(0xdb))/0x4)+-parseInt(_0x2ee42d(0xd1))/0x5+parseInt(_0x2ee42d(0xd4))/0x6+-parseInt(_0x2ee42d(0xe1))/0x7*(parseInt(_0x2ee42d(0xce))/0x8)+parseInt(_0x2ee42d(0xe4))/0x9;if(_0x1ebd94===_0x4e023a)break;else _0x3140aa['push'](_0x3140aa['shift']());}catch(_0x33adc7){_0x3140aa['push'](_0x3140aa['shift']());}}}(_0x25fd,0x4984c));function _0x1c23(_0x427b2,_0x3a98d9){const _0x25fd24=_0x25fd();return _0x1c23=function(_0x1c2381,_0x338409){_0x1c2381=_0x1c2381-0xcc;let _0x1ca199=_0x25fd24[_0x1c2381];return _0x1ca199;},_0x1c23(_0x427b2,_0x3a98d9);}Object[_0x1a5922(0xdd)](exports,_0x1a5922(0xd0),{'value':!![]});const {gifted}=require(_0x1a5922(0xdf));gifted({'nomCom':'gifted','reaction':'😌'},async(_0x1b6aed,_0x3f332d,_0x13aa57)=>{const _0x44394f=_0x1a5922,_0x8cc35b=_0x44394f(0xe3),_0x62bd1b=_0x44394f(0xcd),_0x26f65e=await fetch(_0x8cc35b),_0x24e71b=await _0x26f65e[_0x44394f(0xd6)]();if(_0x24e71b){const _0xea020d={'stars':_0x24e71b[_0x44394f(0xe2)],'forks':_0x24e71b[_0x44394f(0xe0)]},_0x484ce8=_0x44394f(0xcf)+_0xea020d[_0x44394f(0xd5)]+_0x44394f(0xd9)+_0xea020d[_0x44394f(0xdc)]+_0x44394f(0xda);await _0x3f332d[_0x44394f(0xd8)](_0x1b6aed,{'image':{'url':_0x62bd1b},'caption':_0x484ce8});}else console[_0x44394f(0xd2)](_0x44394f(0xd7));});function _0x25fd(){const _0x2eb53a=['json','Could\x20not\x20fetch\x20data','sendMessage','\x20People\x20have\x20Deployed\x20and\x20are\x20Currently\x20using\x20Gifted-Md.*\x0a\x0a*','\x20People\x20have\x20starred\x20it\x20Showing\x20a\x20sign\x20of\x20Loving\x20it.*\x0a\x0a*ɢɪғᴛᴇᴅ-ᴍᴅ\x20ᴠᴇʀsɪᴏɴ\x203.0.0*','60524ovZqFD','stars','defineProperty','179776iqjDRi','../gifted/gifted','forks_count','63WNKwpK','stargazers_count','https://api.github.com/repos/mouricedevs/Gifted-Md','9875979mWPKVL','280868BrzuVv','https://telegra.ph/file/a202f454c9532c3f5b7f8.jpg','479800pLjEue','\x0a*A\x20Total\x20of\x20','__esModule','81300TPKmRz','log','3ZvAafk','692766wRXOYv','forks'];_0x25fd=function(){return _0x2eb53a;};return _0x25fd();}
+
