@@ -54,8 +54,7 @@ const date = moment().format('DD/MM/YYYY');
 ┃▫│ *ᴄᴏᴍᴍᴀɴᴅs:* ${cm.length} 
 ┃▫│ *ᴛʜᴇᴍᴇ:* Gifted
 ┃▫╰─────────────
-╰═══════════════⊷                            
-  ${readmore}\n`;
+╰═══════════════⊷`;
 
   let menuMsg=`  
 
