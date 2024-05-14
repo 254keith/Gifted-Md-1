@@ -59,7 +59,7 @@ const date = moment().format('DD/MM/YYYY');
   let menuMsg=`  
 
  *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*\n`;
-        ${readmore} 
+         '+ readmore +'
   for (const cat in coms) {
         menuMsg += `
 *╭────☉⁠🔹${cat}🔹☉⁠⊷*`;
