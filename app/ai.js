@@ -1,17 +1,17 @@
-const { france } = require('../framework/france');
-const traduire = require("../framework/traduction") ;
+const { france } = require('../gifted/gifted');
+const traduire = require("../gifted/traduction") ;
 const { default: axios } = require('axios');
 //const conf = require('../set');
 
 
 
 
-france({nomCom:"flash",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOptions)=>{
+gifted({nomCom:"gift",reaction:"📡",categorie:"Ai"},async(dest,zk,commandeOptions)=>{
 
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("YEES!\n _I'm listening to you._")}
+    {return repondre("Yes!\n _I'm listening to you._")}
     //var quest = arg.join(' ');
   try{
     
@@ -30,7 +30,7 @@ repondre('something went wrong...')
 
 
 
-  france({ nomCom: "dalle", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  gifted({ nomCom: "dalle", reaction: "📡", categorie: "Ai" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     try {
@@ -43,7 +43,7 @@ repondre('something went wrong...')
       const data = `https://api.maher-zubair.tech/ai/dalle?q=${image}`;
       
     
-      let caption = '*powered by FLASH-MD*';
+      let caption = '*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*';
      
      
         zk.sendMessage(dest, { image: { url: data }, caption: caption }, { quoted: ms });
@@ -54,7 +54,7 @@ repondre('something went wrong...')
     }
   });
   
-  france({ nomCom: "gpt", reaction: "📡", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+  gifted({ nomCom: "gpt", reaction: "📡", categorie: "Ai" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     
@@ -73,12 +73,12 @@ console.log(data.completion);
 
   });
 
-france({ nomCom: "gemini", reaction: "🤗", categorie: "IA" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "gemini", reaction: "🤗", categorie: "Ai" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     
       if (!arg || arg.length === 0) {
-        return repondre(`Hello am *FLASH-MD.* an Ai developed by France King.\n\n What help can I offer you today?.`);
+        return repondre(`Hello am *Gifted-Md Gemini.* an Ai developed by Gifted Tech.\n\n What help can I offer you today?.`);
       }
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
@@ -92,7 +92,7 @@ console.log(data.completion);
 
   });
 
-france({ nomCom: "calc", reaction: "🔢", categorie: "General" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "calc", reaction: "🔢", categorie: "General" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   
     
