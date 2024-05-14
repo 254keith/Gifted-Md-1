@@ -1,6 +1,6 @@
-const {france} = require("../framework/france");
+const {gifted} = require("../gifted/gifted");
 const conf = require("../set");
-const {getMessagesAndXPByJID,getBottom10Users} = require("../bdd/level");
+const {getMessagesAndXPByJID,getBottom10Users} = require("../data/src/level");
 
 
 function get_level_exp(xp) {
@@ -135,7 +135,7 @@ france( {
     
     
          let msg = `
-┏━━━┛ FLASH-MD Ranking┗━━━┓
+┏━━━┛ Gifted-Md Ranking┗━━━┓
          
     *Name :* @${auteurMsgRepondu.split("@")[0]}
     
@@ -211,7 +211,7 @@ france( {
     
     
          let msg = `
-┏━━━┛ FLASH-MD Ranking ┗━━━┓
+┏━━━┛ Gifted-Md Ranking ┗━━━┓
      
   *Name :* ${nomAuteurMessage}
 
@@ -243,7 +243,7 @@ france( {
 
 }) ;
 
-france( {
+gifted( {
   nomCom : "toprank",
  categorie : "Fun",
    }, 
@@ -252,7 +252,7 @@ france( {
     const {ms , arg, repondre,auteurMessage,nomAuteurMessage, msgRepondu , auteurMsgRepondu , mybotpic} = commandeOptions ;
 
 
-       let msg = `┏━━┛ FLASH-MD-top-rang ┗━━┓\n\n`
+       let msg = `┏━━┛ Gifted-Md-top-rang ┗━━┓\n\n`
        
       let topRanks = await getBottom10Users() ;
         let mention = [] ;
