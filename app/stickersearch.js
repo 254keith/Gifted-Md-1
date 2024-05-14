@@ -1,8 +1,8 @@
 const axios = require("axios");
 const { Sticker, StickerTypes } = require("wa-sticker-formatter");
-const {france} = require("../framework/france");
+const {gifted} = require("../gifted/gifted");
 
-france({
+gifted({
   nomCom: "stickersearch",
   categorie: 'Search',
   reaction: "🍁"
@@ -33,7 +33,7 @@ async (dest, zk, commandeOptions) => {
 
     const stickerMess = new Sticker(gifUrl, {
       pack: packname,
-      author: 'FLASH-MD',
+      author: 'Gifted-Md',
       type: StickerTypes.FULL,
       categories: ["🤩", "🎉"],
       id: "12345",
