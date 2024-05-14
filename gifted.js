@@ -39,15 +39,15 @@ let path = require("path");
 const FileType = require('file-type');
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
 //import chalk from 'chalk'
-const { verifierEtatJid , recupererActionJid } = require("./bdd/antilien");
-const { atbverifierEtatJid , atbrecupererActionJid } = require("./bdd/antibot");
-let evt = require(__dirname + "/framework/france");
-const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("./bdd/banUser");
-const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd/banGroup");
-const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
-//const //{loadCmd}=require("/framework/mesfonctions")
-let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/FLASH-MD-WA-BOT;;;=>/g,"");
+const { verifierEtatJid , recupererActionJid } = require("./data/src/antilien");
+const { atbverifierEtatJid , atbrecupererActionJid } = require("./data/src/antibot");
+let evt = require(__dirname + "/gifted/gifted");
+const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("./data/src/banUser");
+const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./data/src/banGroup");
+const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./data/src/onlyAdmin");
+//const //{loadCmd}=require("/gifted/functions")
+let { reagir } = require(__dirname + "/gifted/app");
+var session = conf.session.replace(/Gifted;;;/g,"").replace(/^GIFTED_\d{2}_\d{2}_\d{2}_\d{2}_/g, "").replace(/GIFTED;;;/g, "");
 const prefixe = conf.PREFIXE;
 
 
@@ -55,17 +55,17 @@ async function authentification() {
     try {
        
         //console.log("le data "+data)
-        if (!fs.existsSync(__dirname + "/auth/creds.json")) {
-            console.log("connection in progress ...");
-            await fs.writeFileSync(__dirname + "/auth/creds.json", atob(session), "utf8");
+        if (!fs.existsSync(__dirname + "/src/gifted.json")) {
+            console.log("Connection in Progress ...");
+            await fs.writeFileSync(__dirname + "/src/gifted.json", atob(session), "utf8");
             //console.log(session)
         }
-        else if (fs.existsSync(__dirname + "/auth/creds.json") && session != "zokk") {
-            await fs.writeFileSync(__dirname + "/auth/creds.json", atob(session), "utf8");
+        else if (fs.existsSync(__dirname + "/src/gifted.json") && session != "zokk") {
+            await fs.writeFileSync(__dirname + "/src/gifted.json", atob(session), "utf8");
         }
     }
     catch (e) {
-        console.log("Session Invalid " + e);
+        console.log("Session is Invalid " + e);
         return;
     }
 }
@@ -76,11 +76,11 @@ const store = (0, baileys_1.makeInMemoryStore)({
 setTimeout(() => {
     async function main() {
         const { version, isLatest } = await (0, baileys_1.fetchLatestBaileysVersion)();
-        const { state, saveCreds } = await (0, baileys_1.useMultiFileAuthState)(__dirname + "/auth");
+        const { state, saveCreds } = await (0, baileys_1.useMultiFileAuthState)(__dirname + "/src");
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['Flash-Md', "safari", "1.0.0"],
+            browser: ['Gifted-Md', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
