@@ -1,4 +1,4 @@
-const { france } = require('../framework/france');
+const { gifted } = require('../gifted/gifted');
 
 // Set a riddle list with questions and answers
 const devinettes = [
@@ -96,7 +96,7 @@ const devinettes = [
   },
   ];
   
-france({ nomCom: "riddle", categorie: "Games" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "riddle", categorie: "Games" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre } = commandeOptions;
 
   // Choose a random riddle
