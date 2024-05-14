@@ -1,6 +1,6 @@
-const { france } = require("../framework/france");
+const { gifted } = require("../gifted/gifted");
 const moment = require("moment-timezone");
-const { getBuffer } = require("../framework/dl/Function");
+const { getBuffer } = require("../gifted/dl/Function");
 const { default: axios } = require('axios');
 const speed = require("performance-now");
 
@@ -18,7 +18,7 @@ const runtime = function (seconds) {
  } 
 
 
-france({ nomCom: 'uptime',
+gifted({ nomCom: 'uptime',
     desc: 'To check runtime',    
     Categorie: 'General',
     reaction: '⚙️', 
@@ -29,7 +29,7 @@ france({ nomCom: 'uptime',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_Uptime of FLASH-MD: ${runtime(process.uptime())}_*`) 
+                 await repondre(`*ɢɪғᴛᴇᴅ-ᴍᴅ ʀᴜɴɴɪɴɢ ғᴏʀ: ${runtime(process.uptime())}* `) 
 
    
 
@@ -38,7 +38,7 @@ france({ nomCom: 'uptime',
 );
 
 
-france({ nomCom: 'ss',
+gifted({ nomCom: 'ss',
     desc: 'screenshots website',
     Categorie: 'General',
     reaction: '🎥', 
@@ -57,7 +57,7 @@ france({ nomCom: 'ss',
 let linkkk = `https://api.maher-zubair.tech/misc/sstab?url=${linkk}&dimension=720x720`;
 
 let res = await getBuffer(linkkk);
-   let caption = '*Powered by FLASH-MD*' 
+   let caption = '*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*' 
 
 await zk.sendMessage(dest, { image: res }, { caption: caption }, { quoted: ms });
 
