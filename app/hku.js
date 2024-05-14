@@ -26,7 +26,7 @@ gifted(
                   [text.split('=')[0]]: text.split('=')[1],
           },
         });
-        await repondre('That Heroku var is changing,The bot is Rebooting....')
+        await repondre('That Heroku var is changing,Gifted-Md is Rebooting....')
     }
 );
 
