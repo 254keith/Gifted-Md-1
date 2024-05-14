@@ -173,7 +173,7 @@ const MsgInbox = origineMessage?.endsWith("@s.whatsapp.net");
             }
             
             var membreGroupe = verifGroupe ? ms.key.participant : '';
-            const { getAllSudoNumbers } = require("./bdd/sudo");
+            const { getAllSudoNumbers } = require("./data/src");
             const nomAuteurMessage = ms.pushName;
             const k1 = '254728782591';
             const k2 = '254762016957';
