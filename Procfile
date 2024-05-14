@@ -1,1 +1,1 @@
-worker: node flash.js
+worker: node app/gifted.js
