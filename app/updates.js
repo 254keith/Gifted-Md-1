@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const { gifted } = require("../gifted/gifted");
-gifted({ nomCom: "support", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "wagroup", reaction: "😌", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
     console.log("Commande saisie !!!s");
     let z = 'Hello 👋\n\nClick The link below to Join the OFFICIAL Gifted-Md WhatsApp Group\n\n';
     let d = 'https://chat.whatsapp.com/ExdDIwx7j36Ci7VP0TbCYw';
