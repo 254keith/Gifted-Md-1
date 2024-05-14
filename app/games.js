@@ -1,10 +1,10 @@
-const {france} = require("../framework/france");
+const {gifted} = require("../gifted/gifted");
 const axios = require('axios');
-const traduire = require('../framework/traduction')
+const traduire = require('../gifted/traduction')
 
 
 
-france({
+gifted({
     nomCom: "chifumi",
     categorie: "Games",
     reaction: "📺"
@@ -141,8 +141,8 @@ Therefore, the game is canceled`, mentions : [auteurMessage, auteurMsgRepondu]})
 });
 
 
-france(
-    { nomCom: "quizz", categorie: "Games", reaction: "👨🏿‍💻" },
+gifted(
+    { nomCom: "quiz", categorie: "Games", reaction: "👨🏿‍💻" },
     async (origineMessage, zk, commandeOptions) => {
         const { repondre, auteurMessage } = commandeOptions;
 
