@@ -232,7 +232,7 @@ gifted({
     _0x151171("🥵🥵 " + _0x28c5ba);
   }
 });
-france({
+gifted({
   'nomCom': "mechanical",
   'categorie': 'Logo',
   'reaction': '🏢'
