@@ -1,13 +1,13 @@
-const { france } = require('../framework/france');
+const { gifted } = require('../gifted/gifted');
 const axios = require("axios")
 let { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
-const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("../bdd/banUser");
-const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("../bdd/banGroup");
+const {isUserBanned , addUserToBanList , removeUserFromBanList} = require("../data/src/banUser");
+const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("../data/src/banGroup");
 
-const { generateProfilePicture } = require("../framework/dl/Function");
+const { generateProfilePicture } = require("../gifted/dl/Function");
 
-const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("../bdd/onlyAdmin");
-const {removeSudoNumber,addSudoNumber,issudo} = require("../bdd/sudo");
+const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("../data/src/onlyAdmin");
+const {removeSudoNumber,addSudoNumber,issudo} = require("../data/src/sudo");
 //const conf = require("../set");
 const fs = require('fs');
 const sleep =  (ms) =>{
@@ -18,7 +18,7 @@ const sleep =  (ms) =>{
 
 
 
-france({ nomCom: "lastseen", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "lastseen", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
 
 const { idBot, arg, ms, repondre, superUser, msgRepondu } = commandeOptions;
 
@@ -43,7 +43,7 @@ await zk.updateLastSeenPrivacy(priv)
 
 
 
-france({ nomCom: "online", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "online", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
 
 const { idBot, arg, ms, repondre, superUser, msgRepondu } = commandeOptions;
 
@@ -66,7 +66,7 @@ await zk.updateOnlinePrivacy(priva)
 
 })
 
-france({ nomCom: "mydp", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "mydp", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
 
 const { idBot, arg, ms, repondre, superUser, msgRepondu } = commandeOptions;
 
@@ -90,7 +90,7 @@ await zk.updateProfilePicturePrivacy(privac)
 
 
 
-france({ nomCom: "mystatus", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "mystatus", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
 
 const { idBot, arg, ms, repondre, superUser, msgRepondu } = commandeOptions;
 
@@ -113,7 +113,7 @@ await zk.updateStatusPrivacy(privacy)
 })
 
 
-france({ nomCom: "groupadd", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "groupadd", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
 
 const { idBot, arg, ms, repondre, superUser, msgRepondu } = commandeOptions;
 
@@ -141,7 +141,7 @@ await zk.updateGroupsAddPrivacy(privacq)
 
 
 
-france({ nomCom: "privacy", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "privacy", categorie: "WhatsApp" }, async (dest, zk, commandeOptions) => {
 
 const { idBot, ms, repondre, superUser, msgRepondu } = commandeOptions;
 
@@ -179,7 +179,7 @@ await zk.sendMessage(dest, { image: { url: avatar}, caption: msgg}, { quoted: ms
 });
 
 
-france({ nomCom: "fullpp", categorie: "User" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "fullpp", categorie: "User" }, async (dest, zk, commandeOptions) => {
 
 const { idBot, ms, repondre, superUser, msgRepondu } = commandeOptions;
 
@@ -217,7 +217,7 @@ fs.unlinkSync(medis)
 
   
 
-  france({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+  gifted({ nomCom: "tgs", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
     const { ms, repondre, arg, nomAuteurMessage, superUser } = commandeOptions;
   
     if (!superUser) {
@@ -251,7 +251,7 @@ fs.unlinkSync(medis)
         type = 'not animated sticker'
       }
   
-      let msg = `   Flash-stickers-dl
+      let msg = `   Gifted-stickers-dl
       
   *Name :* ${stickers.data.result.name}
   *Type :* ${type} 
@@ -274,7 +274,7 @@ fs.unlinkSync(medis)
   
           const sticker = new Sticker(buffer.data, {
             pack: nomAuteurMessage,
-            author: "FLASH-MD",
+            author: "Gifted-Md",
             type: StickerTypes.FULL,
             categories: ['🤩', '🎉'],
             id: '12345',
@@ -298,7 +298,7 @@ fs.unlinkSync(medis)
     }
   });
 
-france({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg, auteurMessage, superUser, auteurMsgRepondu, msgRepondu } = commandeOptions;
 
   if (!superUser) { repondre("only modds can use this command"); return };
@@ -314,7 +314,7 @@ france({ nomCom: "crew", categorie: "Mods" }, async (dest, zk, commandeOptions) 
 
 });
 
-france({ nomCom: "left", categorie: "Group" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "left", categorie: "Group" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
   if (!verifGroupe) { repondre("group only"); return };
@@ -326,7 +326,7 @@ france({ nomCom: "left", categorie: "Group" }, async (dest, zk, commandeOptions)
   await zk.groupLeave(dest)
 });
 
-france({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage } = commandeOptions;
 
@@ -344,7 +344,7 @@ france({ nomCom: "join", categorie: "Mods" }, async (dest, zk, commandeOptions) 
 })
 
 
-france({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
@@ -363,7 +363,7 @@ france({ nomCom: "jid", categorie: "Mods" }, async (dest, zk, commandeOptions) =
 
   
 
-france({ nomCom: "block", categorie: "User" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "block", categorie: "User" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
@@ -387,7 +387,7 @@ france({ nomCom: "block", categorie: "User" }, async (dest, zk, commandeOptions)
 
   });
 
-france({ nomCom: "unblock", categorie: "User" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "unblock", categorie: "User" }, async (dest, zk, commandeOptions) => {
 
   const { arg, ms, repondre, verifGroupe, msgRepondu, verifAdmin, superUser, auteurMessage,auteurMsgRepondu } = commandeOptions;
 
@@ -410,7 +410,7 @@ france({ nomCom: "unblock", categorie: "User" }, async (dest, zk, commandeOption
   
     });
 
-france({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "kickall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
 
   const { auteurMessage ,ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser,prefixe } = commandeOptions
 
@@ -445,9 +445,9 @@ await zk.groupParticipantsUpdate(
 }
 });
 
-france({
+gifted({
     nomCom: 'ban',
-    categorie: 'OWNER',
+    categorie: 'Owner',
 }, async (dest, zk, commandeOptions) => {
 
     const { ms, arg, auteurMsgRepondu, msgRepondu , repondre,prefixe,superUser } = commandeOptions;
@@ -494,9 +494,9 @@ france({
 
 
 
-france({
+gifted({
     nomCom: 'bangroup',
-    categorie: 'OWNER',
+    categorie: 'Owner',
 }, async (dest, zk, commandeOptions) => {
 
     const { ms, arg, auteurMsgRepondu, msgRepondu , repondre,prefixe,superUser,verifGroupe } = commandeOptions;
@@ -542,7 +542,7 @@ france({
 });
 
 
-france({
+gifted({
   nomCom: 'onlyadmin',
   categorie: 'Group',
 }, async (dest, zk, commandeOptions) => {
@@ -589,7 +589,7 @@ if(!verifGroupe) {repondre('order reservation for groups' ) ; return };
 } else { repondre('You are not entitled to this order')}
 });
 
-france({
+gifted({
   nomCom: 'sudo',
   categorie: 'Mods',
 }, async (dest, zk, commandeOptions) => {
@@ -691,7 +691,7 @@ france({ nomCom: "send", categorie: "User" }, async (dest, zk, commandeOptions) 
           let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
   
           let stickerMess = new Sticker(media, {
-            pack: 'FLASH-MD',
+            pack: 'Gifted-Md',
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -722,7 +722,7 @@ france({ nomCom: "send", categorie: "User" }, async (dest, zk, commandeOptions) 
 ;
 
 
-france({
+gifted({
   nomCom : 'mention',
   categorie : 'Mods',
 } , async (dest,zk,commandeOptions) => {
@@ -743,7 +743,7 @@ france({
 
   if (alldata.length === 0 ) { repondre(`To activate or modify the mention; follow this syntax: mention link type message
   The different types are audio, video, image, and sticker.
-  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is France King`) ; return}
+  Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is Gifted) ; return}
 
       if(data.status == 'non') {
           etat = 'Desactived'
@@ -764,7 +764,7 @@ Link: ${url}
 
 To activate or modify the mention, follow this syntax: mention link type message
 The different types are audio, video, image, and sticker.
-Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is France King 
+Example: mention https://static.animecorner.me/2023/08/op2.jpg image Hi, my name is Gifted 
 
 To stop the mention, use mention stop`;
 
