@@ -1,9 +1,9 @@
-const {france }= require ('../framework/france') ;
-const {addstickcmd, deleteCmd, getCmdById, inStickCmd , getAllStickCmds} = require('../bdd/stickcmd') ;
+const {gifted }= require ('../gifted/gifted') ;
+const {addstickcmd, deleteCmd, getCmdById, inStickCmd , getAllStickCmds} = require('../data/src/stickcmd') ;
 
 
 
-france(
+gifted(
     {
         nomCom : 'setcmd',
         categorie : 'stickcmd'
@@ -30,7 +30,7 @@ france(
 
     }) ; 
 
-    france(
+    gifted(
       {
           nomCom: 'delcmd',
           categorie: 'stickcmd'
@@ -62,7 +62,7 @@ france(
   );
   
 
-  france(
+  gifted(
     {
         nomCom: 'allcmd',
         categorie: 'stickcmd'
