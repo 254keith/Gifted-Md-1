@@ -60,7 +60,7 @@ str+= '⚡ *'+vr+'* '+'= '+h[vr]+'\n'
 );       
 
 
-    france(
+    gifted(
         {
             nomCom : "getvar",
             categorie : "heroku"
