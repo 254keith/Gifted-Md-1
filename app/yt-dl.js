@@ -1,13 +1,13 @@
-const { france } = require("../framework/france");
+const { gifted } = require("../gifted/gifted");
 const yts = require('yt-search');
 const ytdl = require('ytdl-core');
 const fs = require('fs');
-const yt=require("../framework/dl/ytdl-core.js")
+const yt=require("../gifted/dl/ytdl-core.js")
 const ffmpeg = require("fluent-ffmpeg");
 const yts1 = require("youtube-yts");
 //var fs =require("fs-extra")
 
-france({
+gifted({
   nomCom: "play",
   categorie: "Search",
   reaction: "💿"
@@ -29,14 +29,14 @@ france({
           
        let infoMess = {
           image: {url : videos[0]. thumbnail},
-         caption : `*FLASH-MD SONG DOWNLOADER*\n\n*Title:* ${videos[0].title}
+         caption : `*GIFTED-MD SONG DOWNLOADER:*\n \n*Title:* ${videos[0].title}
          
 *Duration:* ${videos[0].timestamp}
 *Song Url:* ${videos[0].url}
 
 
 
-*_Powered by ©France King._*`
+ *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`
        }
 
       
@@ -81,7 +81,7 @@ france({
 
   
 
-france({
+gifted({
   nomCom: "video",
   categorie: "Search",
   reaction: "🎥"
@@ -106,7 +106,7 @@ france({
         caption: `*Video name :* _${Element.title}_
 *Time :* _${Element.timestamp}_
 *Url :* _${Element.url}_
-_*DOWNLOADING...*_\n\n`
+_*GIFTED-MD IS DOWNLOADING...*_\n\n`
       };
 
       zk.sendMessage(origineMessage, InfoMess, { quoted: ms });
@@ -127,7 +127,7 @@ _*DOWNLOADING...*_\n\n`
 
       fileStream.on('finish', () => {
         // Envoi du fichier vidéo en utilisant l'URL du fichier local
-        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*FLASH-MD*", gifPlayback: false }, { quoted: ms });
+        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*", gifPlayback: false }, { quoted: ms });
       });
 
       fileStream.on('error', (error) => {
