@@ -1,45 +1,6 @@
-const { gifted } = require('../gifted/gifted');
 
-gifted({ nomCom: 'quote', categorie: 'Group' }, async (dest, zk, commandeOptions) => {
-  const { ms, repondre, verifGroupe, arg } = commandeOptions;
-  if (!verifGroupe) {
-    repondre('Commande réservée au groupe uniquement');
-    return;
-  }
 
-  if (!arg[0]) {
-    try {
-      fetch('https://animechan.xyz/api/random')
-        .then((response) => response.json())
-        .then(async (quote) => {
-          repondre(`*Gifted-Md Quotes*
 
-🎬 Anime: ${quote.anime}
-👤 Character: ${quote.character}
-💬 Quote: ${quote.quote}
+const _0x3b6d3e=_0x32dd;(function(_0x518c6e,_0xadabdb){const _0x10ed25=_0x32dd,_0x1a13ae=_0x518c6e();while(!![]){try{const _0x5ba1e2=-parseInt(_0x10ed25(0x1b4))/0x1+parseInt(_0x10ed25(0x1b3))/0x2*(parseInt(_0x10ed25(0x1c2))/0x3)+parseInt(_0x10ed25(0x1bc))/0x4+parseInt(_0x10ed25(0x1b8))/0x5*(parseInt(_0x10ed25(0x1c0))/0x6)+parseInt(_0x10ed25(0x1c3))/0x7+parseInt(_0x10ed25(0x1bd))/0x8+parseInt(_0x10ed25(0x1b5))/0x9*(-parseInt(_0x10ed25(0x1b7))/0xa);if(_0x5ba1e2===_0xadabdb)break;else _0x1a13ae['push'](_0x1a13ae['shift']());}catch(_0x578e17){_0x1a13ae['push'](_0x1a13ae['shift']());}}}(_0x367a,0xa8b0d));const {gifted}=require(_0x3b6d3e(0x1cc));function _0x32dd(_0x4faa7f,_0x40d9ad){const _0x367a9e=_0x367a();return _0x32dd=function(_0x32dd03,_0x5f53ab){_0x32dd03=_0x32dd03-0x1b2;let _0x4efe7a=_0x367a9e[_0x32dd03];return _0x4efe7a;},_0x32dd(_0x4faa7f,_0x40d9ad);}function _0x367a(){const _0x739fe6=['../gifted/gifted','then','join','2CMLpcF','89125oMRpSa','35541WtPdFM','\x0a\x0aPowered\x20by\x20GIFTED-MD','3590ZMOipn','2035jQZykq','\x0a\x0a*ɢɪғᴛᴇᴅ\x20ᴍᴅ\x20ᴠᴇʀsɪᴏɴ\x203.0.0*','quote','\x0a👤\x20Character:\x20','528568KkmGec','4651072CIcjgV','\x0a💬\x20Quote:\x20','Commande\x20réservée\x20au\x20groupe\x20uniquement','9330jjnuKV','GIFTED-MD\x0a\x0a🎬\x20Anime:\x20','2234274CraRmJ','746228HKuIyG','Erreur\x20lors\x20de\x20la\x20génération\x20de\x20la\x20citation\x20:\x20','message','json','anime','character','*Gifted-Md\x20Quotes*\x0a\x0a🎬\x20Anime:\x20','Group','https://animechan.xyz/api/random'];_0x367a=function(){return _0x739fe6;};return _0x367a();}gifted({'nomCom':_0x3b6d3e(0x1ba),'categorie':_0x3b6d3e(0x1ca)},async(_0x420244,_0x3c4477,_0x3b3c6d)=>{const _0x2fde0b=_0x3b6d3e,{ms:_0x2ef31b,repondre:_0xbc1910,verifGroupe:_0x1863a1,arg:_0x192fd5}=_0x3b3c6d;if(!_0x1863a1){_0xbc1910(_0x2fde0b(0x1bf));return;}if(!_0x192fd5[0x0])try{fetch(_0x2fde0b(0x1cb))[_0x2fde0b(0x1cd)](_0x193e09=>_0x193e09[_0x2fde0b(0x1c6)]())[_0x2fde0b(0x1cd)](async _0x283200=>{const _0x4edf90=_0x2fde0b;_0xbc1910(_0x4edf90(0x1c9)+_0x283200[_0x4edf90(0x1c7)]+_0x4edf90(0x1bb)+_0x283200[_0x4edf90(0x1c8)]+_0x4edf90(0x1be)+_0x283200[_0x4edf90(0x1ba)]+_0x4edf90(0x1b9));});}catch(_0x46de2f){_0xbc1910(_0x2fde0b(0x1c4)+_0x46de2f[_0x2fde0b(0x1c5)]);}else{const _0x42e160=_0x192fd5[_0x2fde0b(0x1b2)]('\x20');try{fetch('https://animechan.xyz/api/random/character?name='+_0x42e160)[_0x2fde0b(0x1cd)](_0x1deff8=>_0x1deff8[_0x2fde0b(0x1c6)]())['then'](async _0x2f4f2a=>{const _0x547a8e=_0x2fde0b;_0xbc1910(_0x547a8e(0x1c1)+_0x2f4f2a[_0x547a8e(0x1c7)]+_0x547a8e(0x1bb)+_0x2f4f2a[_0x547a8e(0x1c8)]+_0x547a8e(0x1be)+_0x2f4f2a[_0x547a8e(0x1ba)]+_0x547a8e(0x1b6));});}catch(_0x105a5c){_0xbc1910(_0x2fde0b(0x1c4)+_0x105a5c[_0x2fde0b(0x1c5)]);}}});
 
-*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`);
-        });
-    } catch (e) {
-      repondre('Erreur lors de la génération de la citation : ' + e.message);
-    }
-  } else {
-    const query = arg.join(' ');
 
-    try {
-      fetch('https://animechan.xyz/api/random/character?name=' + query)
-        .then((response) => response.json())
-        .then(async (quote) => {
-          repondre(`GIFTED-MD
-
-🎬 Anime: ${quote.anime}
-👤 Character: ${quote.character}
-💬 Quote: ${quote.quote}
-
-Powered by FLASH-MD`);
-        });
-    } catch (e) {
-      repondre('Erreur lors de la génération de la citation : ' + e.message);
-    }
-  }
-});
