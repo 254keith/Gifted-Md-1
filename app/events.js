@@ -1,8 +1,8 @@
-const { france } = require('../framework/france');
-const { attribuerUnevaleur } = require('../bdd/welcome');
+const { gifted } = require('../gifted/gifted');
+const { attribuerUnevaleur } = require('../data/src/welcome');
 
 async function events(nomCom) {
-    france({
+    gifted({
         nomCom: nomCom,
         categorie: 'Group'
     }, async (dest, zk, commandeOptions) => {
