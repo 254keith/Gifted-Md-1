@@ -14,7 +14,7 @@ module.exports = { session: process.env.SESSION_ID || 'Gifted;;;',
              
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
 AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "no",
-CHATBOT: process.env.CHAT_BOT || "yes",
+CHATBOT: process.env.CHAT_BOT || "no",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'no',
     BOT : process.env.BOT_NAME || 'ɢɪғᴛᴇᴅ-ᴍᴅ',
     OPENAI_API_KEY : process.env.OPENAI_API_KEY || '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',
