@@ -1,33 +1,4 @@
-const { gifted } = require('../gifted/gifted');
-const { attribuerUnevaleur } = require('../data/src/welcome');
 
-async function events(nomCom) {
-    gifted({
-        nomCom: nomCom,
-        categorie: 'Group'
-    }, async (dest, zk, commandeOptions) => {
-        const { ms, arg, repondre, superUser, verifAdmin } = commandeOptions;
 
-        if (verifAdmin || superUser) {
-            if (!arg[0] || arg.join(' ') === ' ') {
-                repondre(nomCom + ' ' + ' on to active and ' + ' ' + nomCom + ' ' + 'off to put off');
-            } else {
-                if (arg[0] === 'on' || arg[0] === 'off') {
-                    
-                    await attribuerUnevaleur(dest, nomCom, arg[0]);
-                    repondre( nomCom + "is actualised on " + arg[0]);
-                } else {
-                    repondre('on for active and off for desactive');
-                }
-            }
-        } else {
-            repondre('You can\'t use this commands ');
-        }
-    });
-}
+const _0x4a95c2=_0xace5;function _0xace5(_0x48da19,_0x4b6173){const _0x5c27ef=_0x5c27();return _0xace5=function(_0xace53c,_0x35c15b){_0xace53c=_0xace53c-0x1e5;let _0x288c84=_0x5c27ef[_0xace53c];return _0x288c84;},_0xace5(_0x48da19,_0x4b6173);}function _0x5c27(){const _0x196c69=['antipromote','is\x20actualised\x20on\x20','11083540olKyqg','antidemote','You\x20can\x27t\x20use\x20this\x20commands\x20','44FSxfiA','../gifted/gifted','9330939vWzdsI','8631240LOIXrF','562IahwTB','Group','7BbOuWr','1780200sCAHRO','4166274GGWQPu','3369vHoChS','welcome','262653RztPrW','join','goodbye'];_0x5c27=function(){return _0x196c69;};return _0x5c27();}(function(_0x31624a,_0x1f10ac){const _0x1152ca=_0xace5,_0x544f3a=_0x31624a();while(!![]){try{const _0x206b67=-parseInt(_0x1152ca(0x1ed))/0x1*(-parseInt(_0x1152ca(0x1e8))/0x2)+parseInt(_0x1152ca(0x1ef))/0x3*(parseInt(_0x1152ca(0x1f7))/0x4)+parseInt(_0x1152ca(0x1eb))/0x5+-parseInt(_0x1152ca(0x1ec))/0x6+-parseInt(_0x1152ca(0x1ea))/0x7*(parseInt(_0x1152ca(0x1e7))/0x8)+-parseInt(_0x1152ca(0x1e6))/0x9+parseInt(_0x1152ca(0x1f4))/0xa;if(_0x206b67===_0x1f10ac)break;else _0x544f3a['push'](_0x544f3a['shift']());}catch(_0x242102){_0x544f3a['push'](_0x544f3a['shift']());}}}(_0x5c27,0x89b79));const {gifted}=require(_0x4a95c2(0x1e5)),{attribuerUnevaleur}=require('../data/src/welcome');async function events(_0x4ebb25){const _0x232cf4=_0x4a95c2;gifted({'nomCom':_0x4ebb25,'categorie':_0x232cf4(0x1e9)},async(_0x415655,_0x1ee567,_0x434268)=>{const _0x1ff8bf=_0x232cf4,{ms:_0x279465,arg:_0x15eb45,repondre:_0x1ddca5,superUser:_0x283f7b,verifAdmin:_0x54880c}=_0x434268;_0x54880c||_0x283f7b?!_0x15eb45[0x0]||_0x15eb45[_0x1ff8bf(0x1f0)]('\x20')==='\x20'?_0x1ddca5(_0x4ebb25+'\x20'+'\x20on\x20to\x20active\x20and\x20'+'\x20'+_0x4ebb25+'\x20'+'off\x20to\x20put\x20off'):_0x15eb45[0x0]==='on'||_0x15eb45[0x0]==='off'?(await attribuerUnevaleur(_0x415655,_0x4ebb25,_0x15eb45[0x0]),_0x1ddca5(_0x4ebb25+_0x1ff8bf(0x1f3)+_0x15eb45[0x0])):_0x1ddca5('on\x20for\x20active\x20and\x20off\x20for\x20desactive'):_0x1ddca5(_0x1ff8bf(0x1f6));});}events(_0x4a95c2(0x1ee)),events(_0x4a95c2(0x1f1)),events(_0x4a95c2(0x1f2)),events(_0x4a95c2(0x1f5));
 
-// Appel de la fonction events pour les valeurs 'welcome' et 'goodbye'
-events('welcome');
-events('goodbye');
-events('antipromote');
-events('antidemote') ;
