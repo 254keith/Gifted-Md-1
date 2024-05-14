@@ -1,39 +1,6 @@
-const { gifted } = require('../gifted/gifted');
-const {ajouterUtilisateurAvecWarnCount , getWarnCountByJID , resetWarnCountByJID} = require('../data/src/warn')
-const s = require("../set")
 
 
-gifted(
-    {
-        nomCom : 'warn',
-        categorie : 'Group'
-        
-    },async (dest,zk,commandeOptions) => {
 
- const {ms , arg, repondre,superUser,verifGroupe,verifAdmin , msgRepondu , auteurMsgRepondu} = commandeOptions;
-if(!verifGroupe ) {repondre('this is a group commands') ; return};
+const _0x215a11=_0x1d67;(function(_0x41993a,_0x9c1852){const _0x9dbb68=_0x1d67,_0x63133e=_0x41993a();while(!![]){try{const _0x4849b8=parseInt(_0x9dbb68(0x1ea))/0x1+parseInt(_0x9dbb68(0x1e5))/0x2*(-parseInt(_0x9dbb68(0x1e9))/0x3)+-parseInt(_0x9dbb68(0x1da))/0x4*(-parseInt(_0x9dbb68(0x1ed))/0x5)+-parseInt(_0x9dbb68(0x1e3))/0x6+-parseInt(_0x9dbb68(0x1f0))/0x7*(-parseInt(_0x9dbb68(0x1e7))/0x8)+-parseInt(_0x9dbb68(0x1db))/0x9+-parseInt(_0x9dbb68(0x1e0))/0xa*(-parseInt(_0x9dbb68(0x1f1))/0xb);if(_0x4849b8===_0x9c1852)break;else _0x63133e['push'](_0x63133e['shift']());}catch(_0x3ceb53){_0x63133e['push'](_0x63133e['shift']());}}}(_0x5684,0xb1a9d));const {gifted}=require('../gifted/gifted'),{ajouterUtilisateurAvecWarnCount,getWarnCountByJID,resetWarnCountByJID}=require(_0x215a11(0x1df)),s=require(_0x215a11(0x1dc));function _0x1d67(_0x4f29e6,_0x3dd4f9){const _0x5684d9=_0x5684();return _0x1d67=function(_0x1d6700,_0x26f2a0){_0x1d6700=_0x1d6700-0x1da;let _0x21c496=_0x5684d9[_0x1d6700];return _0x21c496;},_0x1d67(_0x4f29e6,_0x3dd4f9);}gifted({'nomCom':'warn','categorie':_0x215a11(0x1e1)},async(_0x40cead,_0x463e08,_0xe8679a)=>{const _0x59057a=_0x215a11,{ms:_0x1db5a2,arg:_0x25ad9b,repondre:_0x78776e,superUser:_0xd585e8,verifGroupe:_0x1458cf,verifAdmin:_0x366b72,msgRepondu:_0x33cb86,auteurMsgRepondu:_0x568835}=_0xe8679a;if(!_0x1458cf){_0x78776e('this\x20is\x20a\x20group\x20commands');return;};if(_0x366b72||_0xd585e8){if(!_0x33cb86){_0x78776e(_0x59057a(0x1ef));return;};if(!_0x25ad9b||!_0x25ad9b[0x0]||_0x25ad9b[_0x59057a(0x1e2)]('')===''){await ajouterUtilisateurAvecWarnCount(_0x568835);let _0x561739=await getWarnCountByJID(_0x568835),_0xbaecb9=s[_0x59057a(0x1dd)];if(_0x561739>=_0xbaecb9)await _0x78776e(_0x59057a(0x1e8)),_0x463e08[_0x59057a(0x1eb)](_0x40cead,[_0x568835],_0x59057a(0x1e4));else{var _0x1ecc3f=_0xbaecb9-_0x561739;_0x78776e(_0x59057a(0x1ec)+_0x1ecc3f+'\x20');}}else{if(_0x25ad9b[0x0]===_0x59057a(0x1de))await resetWarnCountByJID(_0x568835),_0x78776e('Warn\x20count\x20is\x20reset\x20for\x20this\x20user');else _0x78776e(_0x59057a(0x1ee));}}else _0x78776e(_0x59057a(0x1e6));});function _0x5684(){const _0x4541e7=['2007005MkcoWx','8tkCosZ','12544452UQlHFR','../set','WARN_COUNT','reset','../data/src/warn','130UFpupX','Group','join','5553324RrKtbn','remove','3862TPRdTz','you\x20are\x20not\x20admin','8fWDXoK','this\x20user\x20reach\x20limit\x20of\x20warning\x20,\x20so\x20i\x20kick\x20him/her','1335wItyWc','876950crCtvq','groupParticipantsUpdate','this\x20user\x20is\x20warned\x20,\x20rest\x20before\x20kick\x20:\x20','787795AKGTeh','reply\x20to\x20a\x20user\x20by\x20typing\x20\x20.warn\x20ou\x20.warn\x20reset','reply\x20a\x20message\x20of\x20user\x20to\x20warn','2396821kSLynm'];_0x5684=function(){return _0x4541e7;};return _0x5684();}
 
-if(verifAdmin || superUser) {
-   if(!msgRepondu){repondre('reply a message of user to warn'); return};
-   
-   if (!arg || !arg[0] || arg.join('') === '') {
-    await ajouterUtilisateurAvecWarnCount(auteurMsgRepondu)
-   let warn = await getWarnCountByJID(auteurMsgRepondu)
-   let warnlimit = s.WARN_COUNT
-   
-   if( warn >= warnlimit ) { await repondre('this user reach limit of warning , so i kick him/her');
-                zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "remove")
- } else { 
 
-    var rest = warnlimit - warn ;
-     repondre(`this user is warned , rest before kick : ${rest} `)
-   }
-} else if ( arg[0] === 'reset') { await resetWarnCountByJID(auteurMsgRepondu) 
-
-    repondre("Warn count is reset for this user")} else ( repondre('reply to a user by typing  .warn ou .warn reset'))
-   
-}  else {
-    repondre('you are not admin')
-}
- 
-   });
