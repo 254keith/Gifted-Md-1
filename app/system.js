@@ -1,54 +1,6 @@
-const {gifted}=require("../gifted/gifted")
 
 
 
+const _0x2564e8=_0x9490;function _0x9490(_0x3f487b,_0x42dd33){const _0x3d30d4=_0x3d30();return _0x9490=function(_0x9490c4,_0x4ba566){_0x9490c4=_0x9490c4-0x1a0;let _0xb53c84=_0x3d30d4[_0x9490c4];return _0xb53c84;},_0x9490(_0x3f487b,_0x42dd33);}(function(_0x435c73,_0x3f68b2){const _0x38cde2=_0x9490,_0x451ab1=_0x435c73();while(!![]){try{const _0xe5ea88=-parseInt(_0x38cde2(0x1b0))/0x1+parseInt(_0x38cde2(0x1a4))/0x2+-parseInt(_0x38cde2(0x1a0))/0x3*(-parseInt(_0x38cde2(0x1b1))/0x4)+parseInt(_0x38cde2(0x1a6))/0x5*(-parseInt(_0x38cde2(0x1b3))/0x6)+parseInt(_0x38cde2(0x1a8))/0x7*(-parseInt(_0x38cde2(0x1a3))/0x8)+-parseInt(_0x38cde2(0x1a5))/0x9*(parseInt(_0x38cde2(0x1a7))/0xa)+parseInt(_0x38cde2(0x1a1))/0xb*(parseInt(_0x38cde2(0x1ae))/0xc);if(_0xe5ea88===_0x3f68b2)break;else _0x451ab1['push'](_0x451ab1['shift']());}catch(_0x12cbc9){_0x451ab1['push'](_0x451ab1['shift']());}}}(_0x3d30,0xca571));const {gifted}=require(_0x2564e8(0x1ac));gifted({'nomCom':_0x2564e8(0x1ad),'categorie':_0x2564e8(0x1af),'reaction':_0x2564e8(0x1a2)},async(_0x27b580,_0x5b5cd1,_0x11972a)=>{const _0xd26305=_0x2564e8,{repondre:_0x1771e5,ms:_0x93b440,dev:_0x1fba6f,superUser:_0x44e78e}=_0x11972a;if(!_0x44e78e)return _0x1771e5(_0xd26305(0x1aa));const {exec:_0xc89c2e}=require(_0xd26305(0x1ab));_0x1771e5('*Gifted-Md\x20is\x20Rebooting...*'),_0xc89c2e(_0xd26305(0x1a9));}),gifted({'nomCom':'restart','categorie':_0x2564e8(0x1af),'reaction':_0x2564e8(0x1a2)},async(_0x383283,_0x43bfcd,_0x40af55)=>{const _0x436d45=_0x2564e8,{repondre:_0x471bff,ms:_0x3454ba,dev:_0x52189a,superUser:_0x8a99}=_0x40af55;if(!_0x8a99)return _0x471bff(_0x436d45(0x1aa));const {exec:_0x4b08b6}=require(_0x436d45(0x1ab));_0x471bff(_0x436d45(0x1b2)),_0x4b08b6(_0x436d45(0x1a9));});function _0x3d30(){const _0x365184=['👨🏿‍💼','24UeSqQb','383768oHHNZJ','27ivZZuC','119450hLOEhz','586350VdNFWI','3032603drrvJT','pm2\x20restart\x20all','This\x20command\x20is\x20for\x20owner\x20only','child_process','../gifted/gifted','reboot','354360pcuvkd','Mods','555528sihKtJ','236VgqWAe','*Gifted-Md\x20is\x20Restarting...*','114LWgldF','55137eTGaUV','759RUaIvv'];_0x3d30=function(){return _0x365184;};return _0x3d30();}
 
-
-
-
-gifted({nomCom:"reboot",categorie:"Mods",reaction:"👨🏿‍💼"},async(dest,z,com)=>{
-
-
-  
-const{repondre,ms,dev,superUser}=com;
-
-  if(!superUser)
-  {
-    return repondre("This command is for owner only");
-  }
-
-  const {exec}=require("child_process")
-
-    repondre("*Gifted-Md is Rebooting...*");
-
-  exec("pm2 restart all");
-  
-
-
-
-});
-
-  gifted({nomCom:"restart",categorie:"Mods",reaction:"👨🏿‍💼"},async(dest,z,com)=>{
-
-
-  
-const{repondre,ms,dev,superUser}=com;
-
-  if(!superUser)
-  {
-    return repondre("This command is for owner only");
-  }
-
-  const {exec}=require("child_process")
-
-    repondre("*Gifted-Md is Restarting...*");
-
-  exec("pm2 restart all");
-  
-
-  
-
-
-
-})
 
