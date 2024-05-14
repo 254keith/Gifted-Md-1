@@ -1,11 +1,11 @@
-const {france} = require('../framework/france');
+const {gifted} = require('../gifted/gifted');
 const fs = require("fs");
 const { exec } = require("child_process");
 
 
 const filename = `${Math.random().toString(36)}`;
 
-france (
+gifted (
     {
         nomCom : 'deep',
         categorie : 'Audio-Edit',
@@ -50,7 +50,7 @@ france (
     }
 );
 
-france (
+gifted (
     {
         nomCom : 'bass',
         categorie : 'Audio-Edit',
@@ -95,7 +95,7 @@ france (
     }
 );
 
-france(
+gifted(
     {
       nomCom: 'reverse',
       categorie: 'Audio-Edit',
@@ -131,7 +131,7 @@ france(
     }
   );
   
-  france(
+  gifted(
     {
       nomCom: 'slow',
       categorie: 'Audio-Edit',
@@ -166,9 +166,7 @@ france(
       }
     }
   );
-
-// Cas pour l'effet "smooth"
-france(
+gifted(
     {
       nomCom: 'smooth',
       categorie: 'Audio-Edit',
@@ -204,8 +202,7 @@ france(
     }
   );
   
-  // Cas pour l'effet "tempo"
-  france(
+  gifted(
     {
       nomCom: 'tempo',
       categorie: 'Audio-Edit',
@@ -241,8 +238,7 @@ france(
     }
   );
   
-  // Cas pour l'effet "nightcore"
-  france(
+  gifted(
     {
       nomCom: 'nightcore',
       categorie: 'Audio-Edit',
