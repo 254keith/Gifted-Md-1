@@ -47,7 +47,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./dat
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./data/src/onlyAdmin");
 //const //{loadCmd}=require("./gifted/functions")
 let { reagir } = require(__dirname + "/gifted/app");
-var session = conf.session.replace(/Gifted;;;/g,"").replace(/^GIFTED_\d{2}_\d{2}_\d{2}_\d{2}_/g, "").replace(/GIFTED;;;/g, "");
+var session = conf.session.replace(/Gifted;;;/g,"");
 const prefixe = conf.PREFIXE;
 
 
