@@ -1,8 +1,8 @@
 const {
-  france
-} = require('../framework/france');
+  gifted
+} = require('../gifted/gifted');
 var mumaker = require("mumaker");
-france({
+gifted({
   'nomCom': "hacker",
   'categorie': "Logo",
   'reaction': "👨🏿‍💻"
@@ -14,7 +14,7 @@ france({
     repondre: _0x7fa6fd
   } = _0x4da9f5;
   if (!_0x17e73d || _0x17e73d == '') {
-    _0x7fa6fd("*__Exemple : * " + _0x34f139 + "hacker France");
+    _0x7fa6fd("*__Exemple : * " + _0x34f139 + "hacker Gifted");
     return;
   }
   try {
@@ -24,7 +24,7 @@ france({
       'image': {
         'url': _0x306ea0.image
       },
-      'caption': "\t *Logo by FLASH-MD*"
+      'caption': "\t *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x4243fc
     });
@@ -32,7 +32,7 @@ france({
     _0x7fa6fd("🥵🥵 " + _0x1cc018);
   }
 });
-france({
+gifted({
   'nomCom': "sand",
   'categorie': 'Logo',
   'reaction': '⌛'
@@ -44,7 +44,7 @@ france({
     repondre: _0x796190
   } = _0x2bce4a;
   if (!_0x237137 || _0x237137 == '') {
-    _0x796190("*Example Usage : * " + _0x4a45eb + "sand Flash-Md");
+    _0x796190("*Example Usage : * " + _0x4a45eb + "sand Gifted");
     return;
   }
   try {
@@ -54,7 +54,7 @@ france({
       'image': {
         'url': _0x3eb776.image
       },
-      'caption': "\t *Logo By FLASH-MD*"
+      'caption': "\t *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x2c8d47
     });
@@ -62,7 +62,7 @@ france({
     _0x796190("🚫🚫 " + _0x3ef129);
   }
 });
-france({
+gifted({
   'nomCom': "dragonball",
   'categorie': "Logo",
   'reaction': '🐉'
@@ -74,7 +74,7 @@ france({
     ms: _0x553819
   } = _0x52f99f;
   try {
-    const _0x4d9fd1 = "*_EXAMPLE *:  " + _0x2ff7d5 + "dragonball FranceKing";
+    const _0x4d9fd1 = "*_EXAMPLE *:  " + _0x2ff7d5 + "dragonball Gifted";
     if (_0x3bca62 == '' || !_0x3bca62) {
       _0x28a782(_0x4d9fd1);
       return;
@@ -89,7 +89,7 @@ france({
       'image': {
         'url': _0x1073c6.image
       },
-      'caption': " \t *Logo by FLASH-MD*"
+      'caption': " \t *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x553819
     });
@@ -97,7 +97,7 @@ france({
     _0x28a782("🥵🥵 " + _0x194dd3);
   }
 });
-france({
+gifted({
   'nomCom': "naruto",
   'categorie': "Logo",
   'reaction': '⛩'
@@ -110,7 +110,7 @@ france({
   } = _0x64fc0b;
   try {
     if (!_0x421d25 || _0x421d25 == '') {
-      _0x48a3d9("*_Example : * " + _0x4206c3 + "naruto FLASH-MD");
+      _0x48a3d9("*_Example : * " + _0x4206c3 + "naruto Gifted");
       return;
     }
     _0x48a3d9("*FLASH-MD is Processing Your Request...*");
@@ -119,7 +119,7 @@ france({
       'image': {
         'url': _0x45c6e5.image
       },
-      'caption': "\t *Logo by FLASH-MD*"
+      'caption': "\t *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x322727
     });
@@ -127,14 +127,14 @@ france({
     _0x48a3d9("🥵🥵 " + _0x2d1bcb);
   }
 });
-france({
+gifted({
   'nomCom': "didong",
   'categorie': 'Logo',
   'reaction': '📱'
 }, async (_0x24d0c9, _0x2481cf, _0x234440) => {
   try {
     if (!_0x181394 || _0x181394 == '') {
-      _0x248cc8("*exemple :* " + _0x16cabd + "didong France King");
+      _0x248cc8("*exemple :* " + _0x16cabd + "didong Gifted");
       return;
     }
     var _0x4d57d1 = await mumaker.ephoto("https://ephoto360.com/tao-anh-che-vui-tu-choi-cuoc-goi-voi-ten-cua-ban-930.html", _0x181394.join(" "));
@@ -143,13 +143,13 @@ france({
       'image': {
         'url': _0x4d57d1.image
       },
-      'caption': "\t *Logo by FLASH-MD*"
+      'caption': "\t *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     });
   } catch (_0x18f72d) {
     _0x248cc8("🥵🥵 " + _0x18f72d);
   }
 });
-france({
+gifted({
   'nomCom': "night",
   'categorie': 'Logo',
   'reaction': '🌃'
@@ -161,7 +161,7 @@ france({
     prefixe: _0x25ea07
   } = _0x11aa3e;
   if (!_0x5ecc77[0x0]) {
-    _0x51b26b("Example of using this command:\n " + _0x25ea07 + "night FLASH-MD");
+    _0x51b26b("Example of using this command:\n " + _0x25ea07 + "night Gifted");
     return;
   }
   let _0x516dcd = _0x5ecc77.join(" ");
@@ -170,13 +170,13 @@ france({
       'image': {
         'url': _0x18f4e2.image
       },
-      'caption': "Logo by *France King*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x2f1fb6
     });
   })["catch"](console.log);
 });
-france({
+gifted({
   'nomCom': "sunset",
   'categorie': "Logo",
   'reaction': '🌞'
@@ -188,7 +188,7 @@ france({
     prefixe: _0x24ee2b
   } = _0x11435e;
   if (!_0x3be5f2[0x0]) {
-    _0x37f281("Example of using this command:\n " + _0x24ee2b + "sunset France King");
+    _0x37f281("Example of using this command:\n " + _0x24ee2b + "sunset Gifted");
     return;
   }
   const _0x3fa918 = _0x3be5f2.join(" ");
@@ -197,13 +197,13 @@ france({
       'image': {
         'url': _0x39bf1e.image
       },
-      'caption': "Logo by *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x565ce8
     });
   })["catch"](console.error);
 });
-france({
+gifted({
   'nomCom': "chocolate",
   'categorie': "Logo",
   'reaction': '🍫'
@@ -215,7 +215,7 @@ france({
     prefixe: _0x40b08a
   } = _0x19c522;
   if (!_0x358d9c || _0x358d9c == '') {
-    _0x151171("Example of using this command:\n " + _0x40b08a + "chocolate Flash-Md");
+    _0x151171("Example of using this command:\n " + _0x40b08a + "chocolate Gifted");
     return;
   }
   try {
@@ -224,7 +224,7 @@ france({
       'image': {
         'url': _0x45cb2e.image
       },
-      'caption': "Logo by *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x1127a5
     });
@@ -244,7 +244,7 @@ france({
     prefixe: _0x2ba19c
   } = _0x56a8d2;
   if (!_0x5ac43d[0x0]) {
-    _0x6979a0("Example of using this command:\n " + _0x2ba19c + "mechanical France King");
+    _0x6979a0("Example of using this command:\n " + _0x2ba19c + "mechanical Gifted");
     return;
   }
   const _0x5ab78f = _0x5ac43d.join(" ");
@@ -253,13 +253,13 @@ france({
       'image': {
         'url': _0x371f0b.image
       },
-      'caption': "Logo by *France King*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0xf9096b
     });
   })["catch"](console.error);
 });
-france({
+gifted({
   'nomCom': 'rain',
   'categorie': "Logo",
   'reaction': "☔"
@@ -271,7 +271,7 @@ france({
     prefixe: _0x528a55
   } = _0x23e3bd;
   if (!_0x262085[0x0]) {
-    _0x5c0330("Example of using this command:\n " + _0x528a55 + "rain France King");
+    _0x5c0330("Example of using this command:\n " + _0x528a55 + "rain Gifted");
     return;
   }
   const _0x127a98 = _0x262085.join(" ");
@@ -280,13 +280,13 @@ france({
       'image': {
         'url': _0x42c768.image
       },
-      'caption': "Logo by *France King*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x1cb9ba
     });
   })["catch"](console.error);
 });
-france({
+gifted({
   'nomCom': "cloth",
   'categorie': "Logo",
   'reaction': '🦺'
@@ -298,7 +298,7 @@ france({
     prefixe: _0x218f0d
   } = _0x36932c;
   if (!_0x2bf3a5[0x0]) {
-    _0x52145c("Example of using this command:\n " + _0x218f0d + "cloth Flash-Md");
+    _0x52145c("Example of using this command:\n " + _0x218f0d + "cloth Gifted");
     return;
   }
   mumaker.ephoto('https://en.ephoto360.com/text-on-cloth-effect-62.html', _0x2bf3a5).then(_0xe3ecc4 => {
@@ -306,19 +306,19 @@ france({
       'image': {
         'url': _0xe3ecc4.image
       },
-      'caption': "Logo by *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x556f94
     });
   })['catch'](console.error);
 });
-france({
+gifted({
   'nomCom': 'avenger',
   'categorie': 'Logo',
   'reaction': '💥'
 }, async (_0x117e9b, _0x154a8e, _0x3594e9) => {
   if (!_0xc0638 || _0xc0638 == '') {
-    _0x3f898a("  Example :* " + _0x338b80 + "graffiti FLASH-MD");
+    _0x3f898a("  Example :* " + _0x338b80 + "graffiti Gifted");
     return;
   }
   try {
@@ -329,13 +329,13 @@ france({
       'image': {
         'url': _0x140c55.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     });
   } catch (_0x589367) {
     _0x3f898a("🥵🥵 " + _0x589367);
   }
 });
-france({
+gifted({
   'nomCom': "water",
   'categorie': 'Logo',
   'reaction': '💦'
@@ -347,7 +347,7 @@ france({
     prefixe: _0x25ea07
   } = _0x11aa3e;
   if (!_0x5ecc77[0x0]) {
-    _0x51b26b("Example of using this command:\n " + _0x25ea07 + "water FLASH-MD");
+    _0x51b26b("Example of using this command:\n " + _0x25ea07 + "water Gifted");
     return;
   }
   let _0x516dcd = _0x5ecc77.join(" ");
@@ -356,13 +356,13 @@ france({
       'image': {
         'url': _0x18f4e2.image
       },
-      'caption': "Logo by *France King*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x2f1fb6
     });
   })["catch"](console.log);
 });
-france({
+gifted({
   'nomCom': "1917",
   'categorie': "Logo",
   'reaction': '😤'
@@ -374,7 +374,7 @@ france({
     repondre: _0x3240f8
   } = _0x1e333b;
   if (!_0x373fd2[0x0]) {
-    _0x3240f8("Example of using this command:\n " + _0x4fe976 + "hub France King");
+    _0x3240f8("Example of using this command:\n " + _0x4fe976 + "1917 Gifted");
     return;
   }
   const _0x15a111 = _0x373fd2.join(" ");
@@ -383,7 +383,7 @@ france({
       'image': {
         'url': _0x3268a8.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0xa5142a
     });
@@ -391,7 +391,7 @@ france({
     console.error("An error occurred :", _0x4e86df);
   });
 });
-france({
+gifted({
   'nomCom': "graffiti",
   'categorie': "Logo",
   'reaction': "💥"
@@ -403,17 +403,17 @@ france({
     repondre: _0x7fa6fd
   } = _0x4da9f5;
   if (!_0x17e73d || _0x17e73d == '') {
-    _0x7fa6fd("*__Example : * " + _0x34f139 + "grafittis France");
+    _0x7fa6fd("*__Example : * " + _0x34f139 + "grafittis Gifted");
     return;
   }
   try {
     let _0x306ea0 = await mumaker.ephoto('https://en.ephoto360.com/create-a-cartoon-style-graffiti-text-effect-online-668.html', _0x17e73d);
-    _0x7fa6fd('*FLASH-MD is processing your request...*');
+    _0x7fa6fd('*Gifted is processing your request...*');
     await _0x4cc7d9.sendMessage(_0xd36572, {
       'image': {
         'url': _0x306ea0.image
       },
-      'caption': "\t *Logo by FLASH-MD*"
+      'caption': "\t *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x4243fc
     });
@@ -421,7 +421,7 @@ france({
     _0x7fa6fd("🥵🥵 " + _0x1cc018);
   }
 });
-france({
+gifted({
   'nomCom': 'thunder',
   'categorie': "Logo",
   'reaction': '⚡'
@@ -442,7 +442,7 @@ france({
       'image': {
         'url': _0x512b24.image
       },
-      'caption': "Logo by *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x6e5183
     });
@@ -450,7 +450,7 @@ france({
     console.error("Une erreur s'est produite :", _0x5a2d77);
   });
 });
-france({
+gifted({
   'nomCom': "boom",
   'categorie': 'Logo',
   'reaction': '💥'
@@ -462,7 +462,7 @@ france({
     repondre: _0x5cd1c8
   } = _0x73e6b9;
   if (!_0x223829[0x0]) {
-    _0x5cd1c8("Example of using this command:\n " + _0x4445e4 + "boom France King");
+    _0x5cd1c8("Example of using this command:\n " + _0x4445e4 + "boom Gifted");
     return;
   }
   const _0x5e0876 = _0x223829.join(" ");
@@ -471,7 +471,7 @@ france({
       'image': {
         'url': _0x133eb0.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x47aa3e
     });
@@ -479,7 +479,7 @@ france({
     console.error("Une erreur s'est produite :", _0x5b9c8d);
   });
 });
-france({
+gifted({
   'nomCom': 'cat',
   'categorie': "Logo",
   'reaction': '🪟'
@@ -490,7 +490,7 @@ france({
     prefixe: _0x52d82c
   } = _0x38548d;
   if (!_0x37615e[0x0]) {
-    repondre("Example of using this command:\n " + _0x52d82c + "cat Flash Md");
+    repondre("Example of using this command:\n " + _0x52d82c + "cat Gifted");
     return;
   }
   const _0x460794 = _0x37615e.join(" ");
@@ -499,7 +499,7 @@ france({
       'image': {
         'url': _0x341d39.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x1c57cd
     });
@@ -507,7 +507,7 @@ france({
     console.error("Une erreur s'est produite :", _0x31d1ea);
   });
 });
-france({
+gifted({
   'nomCom': "whitegold",
   'categorie': "Logo",
   'reaction': '💫'
@@ -528,7 +528,7 @@ france({
       'image': {
         'url': _0xfe2c0d.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x39b4d5
     });
@@ -536,7 +536,7 @@ france({
     console.error("Une erreur s'est produite :", _0x27bc86);
   });
 });
-france({
+gifted({
   'nomCom': "lightglow",
   'categorie': "Logo",
   'reaction': '🌟'
@@ -557,7 +557,7 @@ france({
       'image': {
         'url': _0xa41469.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x1e6332
     });
@@ -565,7 +565,7 @@ france({
     console.error("Une erreur s'est produite :", _0x22fa33);
   });
 });
-france({
+gifted({
   'nomCom': "thor",
   'categorie': "Logo",
   'reaction': '🔨'
@@ -586,7 +586,7 @@ france({
       'image': {
         'url': _0x465666.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x2f2375
     });
@@ -594,7 +594,7 @@ france({
     console.error("Une erreur s'est produite :", _0x3969fd);
   });
 });
-france({
+gifted({
   'nomCom': "neon",
   'categorie': "Logo",
   'reaction': '💡'
@@ -615,7 +615,7 @@ france({
       'image': {
         'url': _0x483373.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x256006
     });
@@ -623,14 +623,14 @@ france({
     console.error("Une erreur s'est produite :", _0x4df764);
   });
 });
-france({
+gifted({
   'nomCom': "purple",
   'categorie': "Logo",
   'reaction': '🧳'
 }, async (_0x492ad7, _0x3fee6e, _0x5760d2) => {
   try {
     if (!_0x24f439 || _0x24f439 == '') {
-      _0x249bc6(_0x2691de + "purple Flash");
+      _0x249bc6(_0x2691de + "purple Gifted");
       return;
     }
     var _0x351a2d = await mumaker.ephoto("https://en.ephoto360.com/purple-text-effect-online-100.html", _0x24f439);
@@ -639,13 +639,13 @@ france({
       'image': {
         'url': _0x351a2d.image
       },
-      'caption': "*Logo by FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     });
   } catch (_0x2f040f) {
     _0x249bc6(_0x2f040f);
   }
 });
-france({
+gifted({
   'nomCom': "gold",
   'categorie': "Logo",
   'reaction': "🧚🏿‍♀️"
@@ -658,7 +658,7 @@ france({
   } = _0x33efa1;
   try {
     if (!_0x4aaadd || _0x4aaadd == '') {
-      _0x22ece3(_0x103d47 + "gold Flash-MD");
+      _0x22ece3(_0x103d47 + "gold Gifted");
       return;
     }
     var _0xc8d9a0 = await mumaker.ephoto("https://en.ephoto360.com/modern-gold-4-213.html", _0x4aaadd);
@@ -667,7 +667,7 @@ france({
       'image': {
         'url': _0xc8d9a0.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x57a225
     });
@@ -675,7 +675,7 @@ france({
     _0x22ece3(_0x3202a4);
   }
 });
-france({
+gifted({
   'nomCom': "arena",
   'categorie': 'Logo',
   'reaction': '🥵'
@@ -688,7 +688,7 @@ france({
   } = _0x29c2d9;
   try {
     if (!_0x586124 || _0x586124 == '') {
-      _0x13017b(_0x1b846c + "arena Flash-MD");
+      _0x13017b(_0x1b846c + "arena Gifted");
       return;
     }
     var _0x2408ee = await mumaker.ephoto("https://en.ephoto360.com/create-cover-arena-of-valor-by-mastering-360.html", _0x586124.join(" "));
@@ -697,7 +697,7 @@ france({
       'image': {
         'url': _0x2408ee.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x4e115a
     });
@@ -705,7 +705,7 @@ france({
     _0x13017b(_0x359f34);
   }
 });
-france({
+gifted({
   'nomCom': "incandescent",
   'categorie': "Logo",
   'reaction': '😋'
@@ -718,7 +718,7 @@ france({
   } = _0xdb325b;
   try {
     if (!_0x5f1a60 || _0x5f1a60 == '') {
-      _0x32974c(_0x2b8316 + "incandescent Flash-MD");
+      _0x32974c(_0x2b8316 + "incandescent Gifted");
       return;
     }
     var _0x2234f3 = await mumaker.ephoto("https://en.ephoto360.com/text-effects-incandescent-bulbs-219.html", _0x5f1a60.join(" "));
@@ -727,7 +727,7 @@ france({
       'image': {
         'url': _0x2234f3.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x5c0779
     });
@@ -735,7 +735,7 @@ france({
     _0x32974c(_0x136ab8);
   }
 });
-france({
+gifted({
   'nomCom': 'child',
   'categorie': "Logo",
   'reaction': '😇'
@@ -748,7 +748,7 @@ france({
   } = _0x26173a;
   try {
     if (!_0x145757 || _0x145757 == '') {
-      _0x2cb5e0(_0x672b9e + "child Flash-MD");
+      _0x2cb5e0(_0x672b9e + "child Gifted");
       return;
     }
     var _0xc3e079 = await mumaker.ephoto('https://en.ephoto360.com/write-text-on-wet-glass-online-589.html', _0x145757.join(" "));
@@ -757,7 +757,7 @@ france({
       'image': {
         'url': _0xc3e079.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0xf6d56b
     });
@@ -765,7 +765,7 @@ france({
     _0x2cb5e0(_0x59350b);
   }
 });
-france({
+gifted({
   'nomCom': 'typo',
   'categorie': "Logo",
   'reaction': '😇'
@@ -778,7 +778,7 @@ france({
   } = _0x3b3c85;
   try {
     if (!_0x3e1839 || _0x3e1839 == '') {
-      _0x1f7fb2(_0x203b33 + "typo Flash-MD");
+      _0x1f7fb2(_0x203b33 + "typo Gifted");
       return;
     }
     var _0x3185ec = await mumaker.ephoto("https://en.ephoto360.com/typography-text-effect-on-pavement-online-774.html", _0x3e1839.join(" "));
@@ -787,7 +787,7 @@ france({
       'image': {
         'url': _0x3185ec.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x4b577f
     });
@@ -795,7 +795,7 @@ france({
     _0x1f7fb2(_0x34838d);
   }
 });
-france({
+gifted({
   'nomCom': 'light',
   'categorie': "Logo",
   'reaction': '🌠'
@@ -808,7 +808,7 @@ france({
   } = _0x15921c;
   try {
     if (!_0x2cdfaa || _0x2cdfaa == '') {
-      _0x3542ba(_0x49c690 + "light Flash-MD");
+      _0x3542ba(_0x49c690 + "light Gifted");
       return;
     }
     var _0x373e9f = await mumaker.ephoto("https://en.ephoto360.com/light-text-effect-futuristic-technology-style-648.html", _0x2cdfaa.join(" "));
@@ -817,7 +817,7 @@ france({
       'image': {
         'url': _0x373e9f.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x36ae73
     });
@@ -825,7 +825,7 @@ france({
     _0x3542ba(_0x4ada63);
   }
 });
-france({
+gifted({
   'nomCom': "steel",
   'categorie': 'Logo',
   'reaction': '🌠'
@@ -838,7 +838,7 @@ france({
   } = _0x2d5750;
   try {
     if (!_0x5c0015 || _0x5c0015 == '') {
-      _0x5a2777(_0x131f7e + "steel Flash-MD");
+      _0x5a2777(_0x131f7e + "steel Gifted");
       return;
     }
     var _0x11adae = await mumaker.ephoto('https://en.ephoto360.com/dragon-steel-text-effect-online-347.html', _0x5c0015.join(" "));
@@ -847,7 +847,7 @@ france({
       'image': {
         'url': _0x11adae.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x2607f5
     });
@@ -855,7 +855,7 @@ france({
     _0x5a2777(_0x5cb7d1);
   }
 });
-france({
+gifted({
   'nomCom': 'sunlight',
   'categorie': "Logo",
   'reaction': '🌠'
@@ -868,7 +868,7 @@ france({
   } = _0x5132f1;
   try {
     if (!_0x16f86c || _0x16f86c == '') {
-      _0x1f13a0(_0x4533db + "sunlight Flash-MD");
+      _0x1f13a0(_0x4533db + "sunlight Gifted");
       return;
     }
     var _0x25c924 = await mumaker.ephoto('https://en.ephoto360.com/sunlight-shadow-text-204.html', _0x16f86c.join(" "));
@@ -877,7 +877,7 @@ france({
       'image': {
         'url': _0x25c924.image
       },
-      'caption': " *Logo by FLASH-MD*"
+      'caption': " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x5e026a
     });
@@ -885,7 +885,7 @@ france({
     _0x1f13a0(_0x561db3);
   }
 });
-france({
+gifted({
   'nomCom': "frozen",
   'categorie': "Logo",
   'reaction': '❄'
@@ -897,7 +897,7 @@ france({
     repondre: _0x346c17
   } = _0xfaf6e1;
   if (!_0x1ae38a[0x0]) {
-    _0x346c17("Example of using this command:\n " + _0x389552 + "frozen King");
+    _0x346c17("Example of using this command:\n " + _0x389552 + "frozen Gifted");
     return;
   }
   const _0x35d3b8 = _0x1ae38a.join(" ");
@@ -906,7 +906,7 @@ france({
       'image': {
         'url': _0x3b491f.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x124cac
     });
@@ -914,7 +914,7 @@ france({
     console.error("Une erreur s'est produite :", _0x312944);
   });
 });
-france({
+gifted({
   'nomCom': "magma",
   'categorie': "Logo",
   'reaction': '♨️'
@@ -935,7 +935,7 @@ france({
       'image': {
         'url': _0x545cb4.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x862632
     });
@@ -943,7 +943,7 @@ france({
     console.error("Une erreur s'est produite :", _0x59b90a);
   });
 });
-france({
+gifted({
   'nomCom': "leaves",
   'categorie': 'Logo',
   'reaction': '☘️'
@@ -964,7 +964,7 @@ france({
       'image': {
         'url': _0xe21133.image
       },
-      'caption': "Logo BY *FLASH-MD*"
+      'caption': "*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*"
     }, {
       'quoted': _0x9e4613
     });
