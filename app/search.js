@@ -1,11 +1,11 @@
-const {france} =require("../framework/france");
+const {gifted} =require("../gifted/gifted");
 const axios =require("axios");
 const Genius = require("genius-lyrics"); 
  const Client = new Genius.Client("jKTbbU-6X2B9yWWl-KOm7Mh3_Z6hQsgE4mmvwV3P3Qe7oNa9-hsrLxQV5l5FiAZO");
 
 
 
-france({ nomCom: "poll",
+gifted({ nomCom: "poll",
         reaction: "✨",
         categorie: "General" }, async (dest, zk, commandeOptions) => {
     
@@ -32,7 +32,7 @@ let options = []
 
 })
 
- france({ nomCom: "fact",
+ gifted({ nomCom: "fact",
         reaction: "✌️",
         categorie: "User" }, async (dest, zk, commandeOptions) => {
     
@@ -51,16 +51,12 @@ repondre(`◆━━━━━━✦FACT✦━━━━━━◆
 
 
 
-*◇* Powered by *France King*
-
-╔═════◇
-║◇ *KEEP USING FLASH-MD*
-╚════════════════════>  `);
+*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0* `);
 
 
 })
 
-france({ nomCom: "quotes",
+gifted({ nomCom: "quotes",
         reaction: "🗿",
         categorie: "User" }, async (dest, zk, commandeOptions) => {
     
@@ -73,21 +69,16 @@ const flashhh= `
 ◆━━━━━━✦QUOTE✦━━━━━━◆ 
 ◇ _${data.quote.body}_\n
 
-◇ *AUTHOR:* ${data.quote.author}
+◇ *Author:* ${data.quote.author}
 
 
 
 
-◇ _Powered by:_ *France King*
-
-
-╔═════◇
-║◇ *KEEP USING FLASH-MD*
-╚════════════════════> `;
+*ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*`;
 repondre(flashhh);
 
 })
-france({ nomCom: "define",
+gifted({ nomCom: "define",
         reaction: "😁",
         categorie: "Search" }, async (dest, zk, commandeOptions) => {
     
@@ -111,7 +102,7 @@ if (!arg || arg.length === 0) return repondre("provide a term");
 })
 
         
-france({ nomCom: "lyrics",
+gifted({ nomCom: "lyrics",
         reaction: "✨",
         categorie: "Search" }, async (dest, zk, commandeOptions) => {
     
