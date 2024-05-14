@@ -1,11 +1,11 @@
 
 
 
-const {france} = require('../framework/france');
+const {gifted} = require('../gifted/gifted');
 var gis = require('g-i-s');
 
 
-france({
+gifted({
   nomCom: "img",
   categorie: "Search",
   reaction: "📷"
