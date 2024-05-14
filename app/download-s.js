@@ -1,6 +1,6 @@
 
-const { mediafireDl } = require("../framework/dl/Function");
-const {france} = require('../framework/france');
+const { mediafireDl } = require("../gifted/dl/Function");
+const {gifted} = require('../gifted/gifted');
 const fs = require('fs');
 const getFBInfo = require("@xaviabot/fb-downloader");
 const { default: axios } = require('axios');
@@ -11,7 +11,7 @@ const { default: axios } = require('axios');
 
 
 
-/*france({nomCom : "igdl" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
+/*gifted({nomCom : "igdl" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
   const {ms,repondre,arg} = commandeOptions ;
 
   let link = arg.join(' ')
@@ -20,13 +20,13 @@ const { default: axios } = require('axios');
 
   try {
      
-    let igvid = await axios('https://vihangayt.me/download/instagram?url='+link)
+    let igvid = await axios('https://api.maher-zubair.tech/download/instagram?url='+link)
 
     if (igvid.data.data.data[0].type == 'video') {
-    zk.sendMessage(dest,{video : {url : igvid.data.data.data[0].url},caption : "ig video downloader powered by *FLASH-MD*",gifPlayback : false },{quoted : ms}) 
+    zk.sendMessage(dest,{video : {url : igvid.data.data.data[0].url},caption : "ig video downloader powered by *GIFTED-MD*",gifPlayback : false },{quoted : ms}) 
     }
     else {
-        zk.sendMessage(dest,{image : {url : igvid.data.data.data[0].url},caption : "ig image downloader powered by *FLASH-MD*"})
+        zk.sendMessage(dest,{image : {url : igvid.data.data.data[0].url},caption : "ig image downloader powered by *GIFTED-MD*"})
     }
   
   } catch (e) {repondre("erreur survenue lors du téléchargement \n " + e)}
@@ -35,7 +35,7 @@ const { default: axios } = require('axios');
 
 
 
-france({nomCom : "insta" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
+gifted({nomCom : "insta" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
   const {ms,repondre,arg} = commandeOptions;
 
 let link = arg.join(' ')
@@ -50,9 +50,9 @@ try {
     if (data && data.result && data.result.data && data.result.data.length > 0) {
         const media = data.result.data[0];
         if (media.type === 'video') {
-            zk.sendMessage(dest, { video: { url: media.url }, caption: "Here is your Instagram Video.\n _Downloaded by_ *FLASH-MD*", gifPlayback: false }, { quoted: ms });
+            zk.sendMessage(dest, { video: { url: media.url }, caption: "Here is your Instagram Video.\n _Downloaded by_ *GIFTED-MD*", gifPlayback: false }, { quoted: ms });
         } else {
-            zk.sendMessage(dest, { image: { url: media.url }, caption: "Here is your Instagram Image!\n _Downloaded by_ *FLASH-MD*" });
+            zk.sendMessage(dest, { image: { url: media.url }, caption: "Here is your Instagram Image!\n _Downloaded by_ *GIFTED-MD*" });
         }
     } else {
         throw new Error("No media found in the response data");
@@ -70,12 +70,12 @@ try {
 
 
 
-france({ nomCom: "twitter", categorie: "Download" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "twitter", categorie: "Download" }, async (dest, zk, commandeOptions) => {
     const { ms, repondre, arg } = commandeOptions;
     let linkz = arg.join(' ');
 
     if (!arg[0]) {
-        repondre('Please insert a *TWITTER Video Link* for *FLASH-MD* to download ');
+        repondre('Please insert a *TWITTER Video Link* for *GIFTED-MD* to download ');
         return;
     }
 
@@ -88,7 +88,7 @@ try {
         if (data && data.data && data.data.HD) {
             const medi = data.data.HD;
            
-                zk.sendMessage(dest, { video: { url: medi }, caption: "Here is your Twitter Video.\n _Downloaded by_ *FLASH-MD*", gifPlayback: false }, { quoted: ms });
+                zk.sendMessage(dest, { video: { url: medi }, caption: "Here is your Twitter Video.\n _Downloaded by_ *GIFTED-MD*", gifPlayback: false }, { quoted: ms });
 
 }
            
@@ -102,7 +102,7 @@ try {
 
 
 
-france({nomCom : "tiktok" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
+gifted({nomCom : "tiktok" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
   const {ms,repondre,arg} = commandeOptions;
 
 let linkx = arg.join(' ')
@@ -119,7 +119,7 @@ if (data && data.result && data.result.url && data.result.url.nowm) {
 
 const nowm = data.result.url.nowm;
 
-zk.sendMessage(dest, { video: { url: nowm }, caption: "Here is your Tiktok Video.\n _Downloaded by_ *FLASH-MD*", gifPlayback: false }, { quoted: ms });
+zk.sendMessage(dest, { video: { url: nowm }, caption: "Here is your Tiktok Video.\n _Downloaded by_ *GIFTED-MD*", gifPlayback: false }, { quoted: ms });
 }
 
 
@@ -131,7 +131,7 @@ zk.sendMessage(dest, { video: { url: nowm }, caption: "Here is your Tiktok Video
 
 
 
-france({nomCom : "mediafire" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
+gifted({nomCom : "mediafire" , categorie : "Download"},async (dest , zk , commandeOptions)=>{
   const {ms,repondre,arg} = commandeOptions ;
 
   let link = arg.join(' ')
@@ -155,7 +155,7 @@ await zk.sendMessage(
                 },
                 fileName: fileInfo[0].nama,
                 mimetype: fileInfo[0].mime,
-                caption: `Downloaded by FLASH-MD: ${fileInfo[0].nama}`,  
+                caption: `Downloaded by GIFTED-MD: ${fileInfo[0].nama}`,  
             },
             { quoted: ms }
         );
@@ -167,7 +167,7 @@ await zk.sendMessage(
 });
 
 
-france({
+gifted({
   nomCom: "fbdl",
   categorie: "Download",
   reaction: "📽️"
@@ -190,7 +190,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'facebook video downloader\n powered by *FLASH-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.hd  }, caption: 'facebook video downloader\n powered by *GIFTED-MD*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
@@ -199,14 +199,14 @@ async (dest, zk, commandeOptions) => {
 
    
   } catch (error) {
-    console.error('An error occurred while *FLASH-MD* was downloading your media:', error);
+    console.error('An error occurred while *GIFTED-MD* was downloading your media:', error);
     repondre('An error occurred while downloading your media.' , error);
   }
 });
 
 
 
-/*france({ nomCom: "tiktok", categorie: "Download", reaction: "🎵" }, async (dest, zk, commandeOptions) => {
+/*gifted({ nomCom: "tiktok", categorie: "Download", reaction: "🎵" }, async (dest, zk, commandeOptions) => {
   const { arg, ms, prefixe,repondre } = commandeOptions;
   if (!arg[0]) {
     repondre(`how to use this command:\n ${prefixe}tiktok tiktok_video_link`);
@@ -215,7 +215,7 @@ async (dest, zk, commandeOptions) => {
 
   const videoUrl = arg.join(" ");
 
- let data = await axios.get('https://vihangayt.me/download/tiktok?url='+ videoUrl) ;
+ let data = await axios.get('https://api.maher-zubair.tech/download/tiktok?url='+ videoUrl) ;
 
   let tik = data.data.data
 
@@ -231,7 +231,7 @@ Description: ${tik.desc}
   
 });*/
 
-france({
+gifted({
   nomCom: "fbdl2",
   categorie: "Download",
   reaction: "📽️"
@@ -254,7 +254,7 @@ async (dest, zk, commandeOptions) => {
         Lien: ${result.url}
       `;
        zk.sendMessage(dest,{image : { url : result.thumbnail}, caption : caption},{quoted : ms}) ;
-       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'facebook video downloader powered by *FLASH-MD*' }, { quoted: ms });
+       zk.sendMessage(dest, { video: { url: result.sd  }, caption: 'facebook video downloader powered by *GIFTED-MD*' }, { quoted: ms });
       
     })
     .catch((error) => {console.log("Error:", error)
