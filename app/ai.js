@@ -59,7 +59,7 @@ repondre('something went wrong...')
   
     
       if (!arg || arg.length === 0) {
-        return repondre(`Please ask a question.`);
+        return repondre(`*Gifted-Md* Gpt4 Here,\n \nPlease ask your Questions.`);
       }
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
