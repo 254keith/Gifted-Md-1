@@ -1,10 +1,10 @@
-const { france } = require("../framework/france");
+const { gifted } = require("../gifted/gifted");
 const canvacord = require("canvacord");
-const {uploadImageToImgur} = require("../framework/imgur")
+const {uploadImageToImgur} = require("../gifted/imgur")
 
 // Generic function to create a canvacord order
 function createCanvacordCommand(commandName, canvacordFunction) {
-  france({
+  gifted({
     nomCom: commandName,
     categorie: "Image-Edit",
     reaction: "🎉"
