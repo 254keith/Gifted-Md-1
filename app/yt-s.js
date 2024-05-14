@@ -1,10 +1,10 @@
-const { france } = require("../framework/france");
-const { getytlink, ytdwn } = require("../framework/ytdl-core");
+const { gifted } = require("../gifted/gifted");
+const { getytlink, ytdwn } = require("../gifted/ytdl-core");
 const yts = require("yt-search");
 const ytdl = require('ytdl-core');
 const fs = require('fs');
 
-france({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
   const query = arg.join(" ");
 
@@ -21,7 +21,7 @@ france({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk,
     for (let i = 0; i < 10; i++) {
       captions += `----------------\nTitle: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
     }
-    captions += "\n======\n*powered by FLASH-MD*";
+    captions += " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
@@ -30,7 +30,7 @@ france({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk,
   }
 });
 
-france({
+gifted({
   nomCom: "ytmp4",
   categorie: "Download",
   reaction: "🎥"
@@ -52,7 +52,7 @@ france({
 
       let InfoMess = {
         image: { url: videos[0].thumbnail },
-        caption: `*nom de la vidéo :* _${Element.title}_
+        caption: ` *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0:* _${Element.title}_
 *Durée :* _${Element.timestamp}_
 *Lien :* _${Element.url}_
 _*En cours de téléchargement...*_\n\n`
@@ -77,7 +77,7 @@ _*En cours de téléchargement...*_\n\n`
 
     fileStream.on('finish', () => {
       // Envoi du fichier vidéo en utilisant l'URL du fichier local
-      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "Powered by *FLASH-MD*", gifPlayback: false }, { quoted: ms });
+      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: " *ɢɪғᴛᴇᴅ ᴍᴅ ᴠᴇʀsɪᴏɴ 3.0.0*", gifPlayback: false }, { quoted: ms });
 
     });
 
@@ -92,7 +92,7 @@ _*En cours de téléchargement...*_\n\n`
   }
 });
 
-france({
+gifted({
   nomCom: "ytmp3",
   categorie: "Download",
   reaction: "💿"
