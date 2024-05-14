@@ -1,9 +1,9 @@
 
-const {france } = require("../framework/france");
+const {gifted } = require("../gifted/gifted");
 const axios = require('axios');
 
 
-france({
+gifted({
   nomCom: "hwaifu",
   categorie: "Hentai",
   reaction: "🙄"
@@ -25,7 +25,7 @@ async (origineMessage, zk, commandeOptions) => {
 
 
   /////////////// hneko //////////
-france({
+gifted({
   nomCom: "trap",
   categorie: "Hentai",
   reaction: "🙄"
@@ -45,7 +45,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "hneko",
   categorie: "Hentai",
   reaction: "🙄"
@@ -66,7 +66,7 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 
-france({
+gifted({
   nomCom: "bj",
   categorie: "Hentai",
   reaction: "🙄"
@@ -86,7 +86,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "ass",
   categorie: "Hentai",
   reaction: "🍑"
@@ -106,7 +106,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "fuck",
   categorie: "Hentai",
   reaction: "💦 "
@@ -129,7 +129,7 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 
-france({
+gifted({
   nomCom: "pussy",
   categorie: "Hentai",
   reaction: "😋"
@@ -152,7 +152,7 @@ async (origineMessage, zk, commandeOptions) => {
 
 
 
-france({
+gifted({
   nomCom: "dick",
   categorie: "Hentai",
   reaction: "😋"
@@ -173,7 +173,7 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 
-france({
+gifted({
   nomCom: "porngif",
   categorie: "Hentai",
   reaction: "😋"
@@ -194,7 +194,7 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 
-france({
+gifted({
   nomCom: "messi",
   categorie: "Wallpapers",
   reaction: "😋"
@@ -215,7 +215,7 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 
-france({
+gifted({
   nomCom: "car",
   categorie: "Wallpapers",
   reaction: "🚗"
@@ -235,7 +235,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "enemy",
   categorie: "Wallpapers",
   reaction: "💀"
@@ -255,7 +255,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "random",
   categorie: "Wallpapers",
   reaction: "😋"
@@ -275,7 +275,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "pubg",
   categorie: "Hentai",
   reaction: "😋"
@@ -295,7 +295,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "dog",
   categorie: "Wallpapers",
   reaction: "🐶"
@@ -315,7 +315,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "cr7",
   categorie: "Wallpapers",
   reaction: "😋"
@@ -335,7 +335,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "blackpink",
   categorie: "Wallpapers",
   reaction: "😋"
@@ -356,7 +356,7 @@ async (origineMessage, zk, commandeOptions) => {
 });
 
 
-france({
+gifted({
   nomCom: "bike",
   categorie: "Wallpapers",
   reaction: "🚲"
@@ -376,7 +376,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "aesthetic",
   categorie: "Wallpapers",
   reaction: ""
@@ -396,7 +396,7 @@ async (origineMessage, zk, commandeOptions) => {
   }
 });
 
-france({
+gifted({
   nomCom: "islamic",
   categorie: "Wallpapers",
   reaction: "🌻"
