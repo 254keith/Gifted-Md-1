@@ -1,8 +1,8 @@
-const { france } = require("../framework/france");
-const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../bdd/sudo")
+const { gifted } = require("../gifted/gifted");
+const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../data/src/sudo")
 const conf = require("../set");
 
-france({ nomCom: "owner", categorie: "General", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "owner", categorie: "General", reaction: "💞" }, async (dest, zk, commandeOptions) => {
     const { ms , mybotpic } = commandeOptions;
     
   const thsudo = await isSudoTableNotEmpty()
@@ -51,16 +51,16 @@ france({ nomCom: "owner", categorie: "General", reaction: "💞" }, async (dest,
   }
 });
 
-france({ nomCom: "developer", categorie: "General", reaction: "🐐" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "developer", categorie: "General", reaction: "🐐" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "France King", numero: "254757835036" },
-      { nom: "᚛FranceKing᚜", numero: "254750948696" },
+      { nom: "GiftedTech", numero: "254728782591" },
+      { nom: "GiftedTech", numero: "254762016957" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
-    let message = "Hello 👋\n *Welcome to Flash-Md!*\n\n*✦━━◆CREATOR INFO◆━━✦*\n\n\n *◇NAME: _France King_*\n*◇AGE: 23*\n*◇LOCATION: _On Earth_*\n*◇BELIEVER: YES ✅*\n*◇FRIENDLY: YES ✅*\n*◇EGOISTIC: _YEEES ✅_*\n*◇FAV TEAM: _CHELSEA_*\n*◇INSTAGRAM: https://instagram.com/france.king1*\n*◇Twitter: https://twitter.com/france_king1*\n\n______________________________\n\n*💙KEEP USING FLASH-MD🤍*\n\n\n_The following are my contacts_:\n:";
+    let message = "Hello 👋\n *Welcome to Gifted-Md!*\n\n*✦━━◆CREATOR INFO◆━━✦*\n\n\n *◇NAME: _Gifted Tech_*\n*◇AGE: 23*\n*◇LOCATION: _On Earth_*\n*◇BELIEVER: YES ✅*\n*◇FRIENDLY: YES ✅*\n*◇INSTAGRAM: https://instagram.com/giftedtechnexus*\n*◇Twitter: https://twitter.com/giftedmauriceke*\n\n______________________________\n \n_The following are my contacts_:\n:";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -92,11 +92,11 @@ else {
 }
 });
 
-france({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOptions) => {
+gifted({ nomCom: "support", categorie: "General" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
   repondre("look on pm sir ")
-  await zk.sendMessage(auteurMessage,{text : `https://wa.me/254757835036`},{quoted :ms})
+  await zk.sendMessage(auteurMessage,{text : `https://wa.me/254762016957`},{quoted :ms})
 
 })
  
