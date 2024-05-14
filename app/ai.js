@@ -11,7 +11,7 @@ gifted({nomCom:"gift",reaction:"📡",categorie:"Ai"},async(dest,zk,commandeOpti
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("Yes!\n _I'm listening to you._")}
+    {return repondre("Yes!\n _I'm Gifteds Trusted Ai Chatbot._\n \nPlease lets chat.")}
     //var quest = arg.join(' ');
   try{
     
